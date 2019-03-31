@@ -1,0 +1,10 @@
+include ../news-block/news-block
+
+mixin main-news(data)
+    .main-news
+        +wrapp
+            .main-news__header
+                h3.main-news__title Новости
+            .main-news__list
+                each item in data.items
+                    +news-block(item)

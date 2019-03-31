@@ -1,0 +1,9 @@
+//- svg icon sprite
+//- @param icon - Имя (id) иконки
+
+//- Usage:
+//-   +svg-icon('pencil')(class="nameClass")
+
+mixin svg-icon(icon)
+    svg(role="img")&attributes(attributes)
+        use(xlink:href='static/img/general/icons/svg/icons.svg#' + icon)&attributes(attributes)

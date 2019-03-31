@@ -1,0 +1,8 @@
+include ../all-categories-menu/all-categories-menu
+
+mixin all-categories(data)
+    .all-categories
+        .all-categories__text Все категории
+        .all-categories__icon
+            +fa-icon('align-right')
+        +all-categories-menu(data)

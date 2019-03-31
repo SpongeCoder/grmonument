@@ -1,0 +1,33 @@
+.header {
+    padding-bottom: 50px;
+
+    background-color: white;
+
+    &__city {
+    }
+
+    &__top {
+        padding: rem(8) rem(25);
+
+        font-size: rem(14);
+
+        background-color: $header-top-background;
+    }
+
+    &__top-wrapp {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    &__middle {
+        height: rem(107);
+    }
+
+    &__middle-wrapp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+}

@@ -1,0 +1,32 @@
+.title {
+    position: relative;
+
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+
+    border-bottom: 1px $color-root-gray-light solid;
+
+    &__name {
+        position: relative;
+
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        font-size: 22px;
+        color: #000000;
+
+        &::before {
+            content: '';
+
+            position: absolute;
+            bottom: -13px;
+            left: 0;
+
+            width: 120%;
+            height: 3px;
+
+            background-color: $color-root-red-1;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+include ../title/title
+include ../product-slider/product-slider
+include ../product-price/product-price
+include ../select-color-item/select-color-item
+include ../select-size/select-size
+//- include ../product-related/product-related
+include ../product-characteristics/product-characteristics
+include ../product-payment/product-payment
+include ../tabs/tabs
+include ../social-links/social-links
+include ../product-quantity/product-quantity
+
+mixin p-product-detail()
+    +b.p-product-detail
+        +e.top
+            +e.left
+                +e.slider.is-new
+                    +e.discount -20%
+                    +product-slider(productDetailSlider)
+
+            +e.center
+                +e.content
+                    +title('Анальная втулка для электростимуляции Little John - 9 см').p-product-detail__title
+                    +e.desc
+                        p Эта маленькая пробочка, идеально подходящая новичкам в деле анальных ласк, выполнена из отполированного медицинского алюминия.  Будучи подключённой к электростимулятору MyStim, она служит источником наслаждения – при условии, что ток будет слабым.  Если же сила тока будет большой, стимулятор будет пульсировать, доставляя и удовольствие, и боль.
+
+                    +e.options--flex
+                        +e.article
+                            +e.SPAN.name Артикул:
+                            span KL-861302
+                        +e.avail В наличии
+                        //- +e.avail--not Нет в наличии
+
+                    +e.options
+                        +e.prop
+                            +e.name Производитель:
+                            +e.A.manufacturer-link(href=jv0 title=productManufacturer.MyStim.name)
+                                +e.IMG.manufacturer-logo(src=productManufacturer.MyStim.img alt=productManufacturer.MyStim.name title=productManufacturer.MyStim.name)
+
+                        +e.prop
+                            +e.name Размер:
+                            +e.size
+                                +select-size(productDetailSize.items).product-detail__size-radio
+
+                        +e.prop
+                            +e.name Цвет:
+                            +select-color-item(productDetailColor).product-detail__color
+
+                        +e.prop
+                            +e.name Цена:
+                            +product-price(productDetailPrice).product-detail__price
+
+                    +e.options--flex-start
+                        +e.name Кол-во:
+                        +product-quantity(1)
+
+                        BUTTON.p-product-detail__cart В корзину
+                            +fa-icon('cart-arrow-down').input-btn__icon
+
+                    +e.options
+                        +e.add-favorite.js-favorite(href=jv0 title="Добавить в избранное")
+                            +e.name Добавить в избранное:
+                            +e.favorite
+                                +fa-icon('heart')
+
+                    +e.options
+                        +e.name Поделиться:
+                        +social-links
+
+        +e.bottom
+            +tabs(productDetailTabs)
+
+            +e.info
+                +product-characteristics(productDetailCharacteristics)(data-tabs-selector='characteristics' data-tabs-index='product').p-product-detail__characteristics
+                +product-payment(data-tabs-selector='payment' data-tabs-index='product').p-product-detail__payment

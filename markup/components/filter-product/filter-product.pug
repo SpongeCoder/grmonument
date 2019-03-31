@@ -1,0 +1,37 @@
+include ../filter-range/filter-range
+include ../select-color/select-color
+include ../select-size/select-size
+
+mixin filter-product()
+    +b.FORM.filter-product(action='' method='get')&attributes(attributes)
+        +e.name Цена
+        +e.price
+            +filter-range(filterRange.price)
+
+        +e.name Цвет
+        +e.color
+            +select-color(filterColor)
+
+        +e.name Размер
+        +e.size
+            +select-size(filterSize.items).filter-product__size-radio
+
+        +e.name Диаметр
+        +e.diameter
+            +filter-range(filterRange.diameter)
+
+        +e.name Длина
+        +e.length
+            +filter-range(filterRange.length)
+
+
+        +e.name Производитель
+        +e.manufacturer
+            select(name="manufacturer")
+                each item in filterSelect.items
+                    option(value=item.value)= item.label
+
+        +e.buttons
+            BUTTON.input-btn(type='button').filter-product__btn--clear Очистить
+            BUTTON.input-btn(type='button').filter-product__btn--clear Применить
+

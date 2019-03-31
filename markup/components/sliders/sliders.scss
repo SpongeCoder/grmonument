@@ -1,0 +1,159 @@
+.sliders {
+    &__wrapp {
+        position: relative;
+    }
+
+    &__header {
+        position: relative;
+
+        margin-bottom: 20px;
+
+        &::before {
+            content: '';
+
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+
+            width: 100%;
+            height: 1px;
+
+            background-color: $color-root-gray-light;
+        }
+    }
+
+    &__header-wrapp {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        display: inline-block;
+        padding-bottom: 5px;
+        margin: 0;
+
+        font-size: 20px;
+        color: black;
+
+        border-bottom: 3px solid $color-root-red-1;
+    }
+
+    &__tabs {
+    }
+
+    &__tab {
+        position: relative;
+
+        padding: 0;
+        padding-bottom: 7px;
+        margin-left: 18px;
+
+        font-size: 14px;
+        font-weight: bold;
+        color: #343538;
+
+        border: 0;
+        background-color: transparent;
+        outline: none;
+
+        &.is-active {
+            color: $color-root-red-2;
+
+            border-bottom: 2px solid $color-root-red-1;
+        }
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+
+            width: 100%;
+            height: 1px;
+
+            background-color: $color-root-red-1;
+            transform: scaleX(0);
+            visibility: hidden;
+
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        &:hover {
+            &::before {
+                transform: scaleX(1);
+                visibility: visible;
+            }
+        }
+    }
+
+    &__content-wrapp {
+        height: 401px;
+
+        opacity: 1;
+
+        transition: all 0.3s ease-in-out 0s;
+
+        &.is-animate {
+            opacity: 0;
+        }
+    }
+
+    &__content {
+        display: none;
+
+        &.is-active {
+            display: block;
+        }
+
+        .product-card {
+            margin-right: 27px;
+        }
+    }
+
+    &__left,
+    &__right {
+        position: absolute;
+        top: 180px;
+
+        padding: 0;
+
+        font-size: 20px;
+        color: #666;
+
+        border: none;
+        background: none;
+        outline: none;
+
+        transition: $transition-link;
+
+        &:hover {
+            color: $color-root-red-2;
+        }
+
+        &[aria-disabled=true] {
+            opacity: 0;
+        }
+    }
+
+    &__left {
+        left: -20px;
+    }
+
+    &__right {
+        right: -20px;
+    }
+
+    &--new {
+        width: calc(100% - 299px);
+        margin-left: 27px;
+    }
+
+    &--sale {
+        width: calc(100% - 299px);
+        margin-right: 27px;
+    }
+}

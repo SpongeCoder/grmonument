@@ -1,0 +1,11 @@
+.sliders-manufactures {
+    padding: 5px 20px;
+    margin-bottom: 20px;
+
+    border: 1px $color-root-gray-light solid;
+    background-color: #f8f8f8;
+
+    &__item {
+        margin-right: 30px;
+    }
+}

@@ -1,0 +1,22 @@
+extends ../layouts/default
+
+
+block vars
+    -pageSettings.title = 'Pages';
+
+block content
+    +wrapp
+        ul
+            li
+                a(href="main.html") Главная
+            //- li
+            //-     a(href="catalog.html") Каталог
+            //- li
+            //-     a(href="products-grid.html") Раздел каталога (grid)
+            //- li
+            //-     a(href="product-detail.html") Детальная товара
+            //- li
+            //-     a(href="cart.html") Корзина
+            //- li
+            //-     a(href="checkout.html") Оформление заказа
+

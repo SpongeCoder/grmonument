@@ -1,0 +1,94 @@
+.sandwich {
+    position: relative;
+
+    display: block;
+    width: $sandwich-width;
+    height: 40px;
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+
+    // 1025px
+    @include above($screen-xl + 1px) {
+        display: none;
+    }
+
+    &__line {
+        position: absolute;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin-bottom: 4px;
+
+        background: $sandwich-background;
+
+        transition: background .3s;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+
+            position: absolute;
+            left: 0;
+
+            width: 100%;
+            height: 3px;
+
+            background-color: $sandwich-background;
+        }
+
+        &::before {
+            top: -8px;
+
+            transition: top .3s .3s, transform .3s 0s;
+        }
+
+        &::after {
+            bottom: -8px;
+
+            transition: bottom .3s .3s, transform .3s 0s;
+        }
+    }
+
+    &.is-active {
+        position: relative;
+        z-index: 9;
+
+        .sandwich__line {
+            position: relative;
+
+            margin: 0 auto;
+
+            background-color: transparent;
+
+            &::before {
+                top: 0px;
+
+                transform: rotate(45deg);
+
+                transition: top .3s 0s, transform .3s .3s;
+            }
+
+            &::after {
+                bottom: 0;
+
+                transform: rotate(-45deg);
+
+                transition: bottom .3s 0s, transform .3s .3s;
+            }
+        }
+    }
+}
+
+.is-mobile .sandwich {
+    display: block;
+}

@@ -1,0 +1,19 @@
+include ./all-categories/all-categories
+include ../icon-wishlist/icon-wishlist
+include ../icon-basket/icon-basket
+
+mixin main-menu(data)
+    +b.main-menu
+        +wrapp.main-menu__wrapp
+            +all-categories(headerMenu.data)
+            +e.NAV.list
+                +e.A.link(href="/").is-active Главная
+                +e.A.link(href=jv0) Новинки
+                +e.A.link(href=jv0) Лидеры продаж
+                +e.A.link(href=jv0) Распродажи
+                +e.A.link(href=jv0) Бренды
+                +e.A.link(href=jv0) Новости
+                +e.A.icon-search(href=jv0)
+                    +fa-icon('search')
+                +icon-wishlist.icon-wishlist--menu
+                +icon-basket.icon-basket--menu

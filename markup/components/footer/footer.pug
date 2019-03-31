@@ -1,0 +1,37 @@
+include ../adults-only/adults-only
+include ../social-links/social-links
+
+mixin footer()
+    +b.FOOTER.footer
+        //- +wrapp.footer__wrapp
+        //-     +e.column
+        //-         +adults-only.footer__adults
+        //-     +e.column
+        //-         +e.column-title Помощь
+        //-         +e.NAV.menu
+        //-             +e.A.link(href=jv0) Как оформить заказ
+        //-             +e.A.link(href=jv0) Оплата и доставка
+        //-             +e.A.link(href=jv0) Обмен и возврат товара
+        //-             +e.A.link(href=jv0) Таблицы размеров одежды
+        //-             +e.A.link(href=jv0) Статусы заказов
+        //-             +e.A.link(href=jv0) База знаний
+        //-     +e.column
+        //-         +e.column-title Покупателям
+        //-         +e.NAV.menu
+        //-             +e.A.link(href=jv0) Анонимность
+        //-             +e.A.link(href=jv0) Возврат товара
+        //-             +e.A.link(href=jv0) Вопросы и ответы
+        //-     +e.column
+        //-         +e.column-title Информация
+        //-         +e.NAV.menu
+        //-             +e.A.link(href=jv0) О магазине
+        //-             +e.A.link(href=jv0) Контакты
+        //-             +e.A.link(href=jv0) Оферта
+        //-             +e.A.link(href=jv0) Карта сайта
+        //-     +e.column
+        //-         +e.column-title Мы в соцсетях:
+        //-             +social-links
+        +e.bottom
+            +wrapp.footer__bottom-wrapp
+                +e.copyright © 2018 Mr.Pepper
+

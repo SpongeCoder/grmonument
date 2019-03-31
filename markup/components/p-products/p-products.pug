@@ -1,0 +1,19 @@
+include ../filter-product/filter-product
+include ../title/title
+include ../sort-product/sort-product
+include ../product-card/product-card
+include ../page-nav/page-nav
+
+mixin p-products(data)
+    .p-products
+        +wrapp.p-products__wrapp
+            +filter-product.p-products__filter
+            .p-products__content
+                +title('Для женщин')
+                +sort-product
+                .p-products__items
+                    each item in productItems.items
+                        +product-card(item).p-products__item
+                    each item in productItems.items
+                        +product-card(item).p-products__item
+                +page-nav

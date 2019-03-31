@@ -1,0 +1,38 @@
+.all-categories {
+    position: relative;
+
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: rem(270);
+    height: rem(55);
+    padding: 0 rem(15);
+
+    font-size: rem(18);
+    color: white;
+
+    background-color: $color-root-red-2;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        right: rem(-5);
+
+        border-width: rem(6) 0 0 rem(5);
+        border-style: solid;
+        border-color: transparent transparent transparent $color-root-gray;
+    }
+
+    &__text {
+        font-weight: 500;
+    }
+
+    &__icon {
+        font-size: rem(30);
+    }
+}

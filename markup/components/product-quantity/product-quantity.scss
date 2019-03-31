@@ -1,0 +1,45 @@
+.product-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__minus,
+    &__plus {
+        display: inline-block;
+        box-sizing: border-box;
+        height: 30px;
+        padding: 5px 10px;
+        margin: 0;
+
+        font-size: 18px;
+        color: #000;
+
+        border: 1px solid $color-root-gray-light;
+        border-radius: 3px;
+        background-color: $color-root-gray-light;
+
+        transition: $transition-link;
+
+        &:hover {
+            color: #fff;
+
+            border-color: $color-gray;
+            background-color: $color-gray;
+        }
+    }
+
+    &__count {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 40px;
+        height: 30px;
+        padding: 5px 10px;
+        margin: 0 10px;
+
+        font-size: 14px;
+        text-align: center;
+
+        border: 1px $color-root-gray-light solid;
+        border-radius: 3px;
+    }
+}

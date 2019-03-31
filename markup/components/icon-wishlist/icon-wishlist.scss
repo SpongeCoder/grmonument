@@ -1,0 +1,46 @@
+.icon-wishlist {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &:hover {
+        .icon_heart {
+            fill: $color-link--hover;
+        }
+    }
+
+    &__icon {
+        .icon_heart {
+            width: 30px;
+            height: 30px;
+
+            transition: $transition-link;
+            fill: $color-root-gray;
+        }
+    }
+
+    &__text {
+        display: inline-block;
+        margin-left: rem(10);
+
+        font-size: rem(14);
+    }
+
+    &--menu {
+        margin-left: 30px;
+
+        .icon_heart {
+            fill: white;
+        }
+
+        .icon-wishlist__text {
+            display: none;
+        }
+
+        &:hover {
+            .icon_heart {
+                fill: $color-root-gray;
+            }
+        }
+    }
+}

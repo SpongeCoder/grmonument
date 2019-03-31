@@ -1,0 +1,5 @@
+**/_*.js
+**/separate-js/*.js
+**/plugins/*.js
+**/components/**/data/data.js
+plugins-config.json

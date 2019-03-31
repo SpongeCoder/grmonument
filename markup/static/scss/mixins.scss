@@ -1,0 +1,143 @@
+@mixin Rouble($fontSize, $lineHeight)
+{
+	font-family: 'Rouble' !important;
+	speak: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+
+	line-height: $lineHeight;
+	font-size: $fontSize;
+
+	// Better Font Rendering  //
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&:before { content: "\e900"; }
+}
+
+// =============================================================================
+// Подсчет позиции и размера для резинового спрайта
+// =============================================================================
+// Подсчет позиции и размера для резинового спрайта
+// @param  {integer} posX       - Абсолютное позиция изображения по х
+// @param  {integer} posY       - Абсолютное позиция изображения по y
+// @param  {integer} iconW      - Ширина иконки
+// @param  {integer} iconH      - Высота иконки
+// @param  {integer} spriteW    - Ширина спарйта
+// @param  {integer} spriteH    - Высота спарйта
+@mixin responsiveSprite($posX, $posY, $iconW, $iconH, $spriteW, $spriteH)
+{
+	@if $posX == 0 {
+		background-position-x: 0;
+	} @else {
+		background-position-x: $posX / ($spriteW - $iconW) * 100%;
+	}
+
+	@if $posY == 0 {
+		background-position-y: 0;
+	} @else {
+		background-position-y: $posY / ($spriteH - $iconH) * 100%;
+	}
+
+	background-size: ($spriteW / $iconW * 100%), ($spriteH / $iconH * 100%);
+	background-repeat: no-repeat;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+// @param  {string} name     - название для font-family
+// @param  {string} path     - путь к шрифту без формата
+// @param  {string} weight   - font-weight
+// @param  {string} style    - font-style
+// @param  {string} $exts    - форматы шрифта, которые используются
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+
+    $extmods: (
+        eot: "?",
+        svg: "#" + str-replace($name, " ", "_")
+    );
+
+    $formats: (
+        otf: "opentype",
+        ttf: "truetype"
+    );
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+// String Replace (вспомогательный миксин для font-face)
+@function str-replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+
+// =============================================================================
+// Медиа запросы
+// =============================================================================
+
+// меньше указанной величины (по умолчанию ширина)
+@mixin below($width, $orientation: 'width') {
+    @media screen and (max-#{$orientation}: $width) {
+        @content;
+    }
+}
+
+// больше указанной величины (по умолчанию ширина)
+@mixin above($width, $orientation: 'width') {
+    @media screen and (min-#{$orientation}: $width) {
+        @content;
+    }
+}
+
+// между первой и второй величиной (по умолчанию ширина)
+@mixin between($minWidth, $maxWidth, $orientation: 'width') {
+    @media screen and (min-#{$orientation}: $minWidth) and (max-#{$orientation}: $maxWidth) {
+        @content;
+    }
+}
+
+
+// =============================================================================
+// Функции пересчета значений
+// =============================================================================
+
+@function rem($num, $root: 16) {
+    $strip-unit: $num / 1;
+    @return $strip-unit / $root * 1rem;
+}
+
+@function em($num, $root: 16) {
+    $strip-unit: $num / 1;
+    @return $strip-unit / $root * 1em;
+}
+
+
+// =============================================================================
+// Убирает выделение блока на моб. устройствах
+// http://stackoverflow.com/a/17772980
+// =============================================================================
+@mixin clearTouchBorder() {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+    outline: none !important;
+}

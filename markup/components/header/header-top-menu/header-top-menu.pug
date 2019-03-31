@@ -1,0 +1,17 @@
+mixin header-top-menu(data)
+    +b.NAV.header-top-menu
+        +e.UL.list
+            each item in data.items
+                +e.LI.element
+                    +e.A.link(href=jv0)
+                        +e.SPAN.link-text= item.text
+                        if item.menu
+                            +fa-icon('angle-down')
+
+                    if item.menu
+                        +e.UL.second-list
+                            each itemSecond in item.menu
+                                +e.LI.second-element(class=(itemSecond.type ? "--" + itemSecond.type : '' ))
+                                    if itemSecond.text
+                                        +e.A.second-link(href=jv0)
+                                            +e.SPAN.second-link-text= itemSecond.text

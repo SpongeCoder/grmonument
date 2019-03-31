@@ -1,0 +1,25 @@
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    &__link {
+        margin-top: 10px;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .icon {
+        display: block;
+        width: 35px;
+        height: 35px;
+    }
+}

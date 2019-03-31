@@ -1,0 +1,15 @@
+.wrapp {
+    width: 97.7%;
+    max-width: $max-width;
+    margin: 0 auto;
+
+    &-main {
+        min-height: 100%;
+        overflow: hidden;
+    }
+
+    &--flex {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

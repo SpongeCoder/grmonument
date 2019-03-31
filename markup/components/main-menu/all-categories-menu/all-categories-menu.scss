@@ -1,0 +1,138 @@
+.all-categories-menu {
+    position: absolute;
+    z-index: 2;
+    top: rem(55);
+    left: 0;
+
+    display: none;
+    width: 100%;
+
+    &__list {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        border-right: 1px solid $color-root-gray-light;
+        border-left: 1px solid $color-root-gray-light;
+        list-style-type: none;
+    }
+
+    &__item {
+        position: relative;
+
+        background-color: white;
+
+        &:hover {
+            background-color: #f8f8f8;
+
+            & > .all-categories-menu__link {
+                color: $color-link--hover;
+            }
+
+            & > .all-categories-menu-second {
+                display: block;
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 15px;
+
+        font-size: 14px;
+        font-weight: bold;
+
+        border-bottom: 1px solid $color-root-gray-light;
+    }
+}
+
+.all-categories-menu-second {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 100%;
+
+    display: none;
+    min-width: 200px;
+    padding: 10px 20px;
+
+    font-size: 14px;
+
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+
+    &__table {
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    &__wrapp {
+        width: 200px;
+        padding-right: 10px;
+        margin-right: 15px;
+
+        border-right: 1px solid $color-root-gray-light;
+
+        &:last-of-type {
+            padding-right: 0;
+            margin-right: 0;
+
+            border: none;
+        }
+    }
+
+    &__link-section {
+        font-weight: bold;
+        color: black;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+
+        list-style-type: none;
+    }
+
+    &__item {
+        position: relative;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+            padding-left: 15px;
+
+            .all-categories-menu-second__link {
+                padding-right: 0;
+            }
+
+            .all-categories-menu-second__icon {
+                color: $color-link--hover;
+            }
+        }
+    }
+
+    &__link {
+        position: relative;
+
+        display: block;
+        padding: 5px 15px 5px 0;
+
+        background: white;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+        color: $color-link;
+
+        transform: translateY(-50%);
+
+        transition: all 300ms ease 0ms;
+    }
+}

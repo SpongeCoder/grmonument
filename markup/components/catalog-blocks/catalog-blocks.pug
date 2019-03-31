@@ -1,0 +1,12 @@
+mixin catalog-blocks(data)
+    +b.catalog-blocks&attributes(attributes)
+        each item in data
+            +e.block
+                +e.IMG.img(src=item.img alt=item.title)
+                +e.A.title(href=jv0)= item.title
+                +e.links
+                    each link, index in item.links
+                        +e.A.link(href=jv0)= link
+                        if index != item.links.length - 1
+                            | ,
+                            |

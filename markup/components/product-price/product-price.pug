@@ -1,0 +1,12 @@
+mixin product-price(data)
+    +b.product-price&attributes(attributes)
+        if data.discount
+            +e.price--discount= data.discount
+                +e.SPAN.rub
+        else
+            +e.price= data.price
+                +e.SPAN.rub
+
+        if data.showOld
+            +e.price--line= data.price
+                +e.SPAN.rub

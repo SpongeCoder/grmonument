@@ -1,0 +1,56 @@
+//- project settings
+include ../../bemto/bemto.pug
+- set_bemto_settings({modifier: '--'})
+include ../mixin/icon
+include ../mixin/fa-icon
+include ../mixin/svg-icon
+
+//- main block
+include ../components/wrapper/wrapper
+include ../components/wrapp/wrapp
+include ../components/header/header
+include ../components/footer/footer
+
+include ../components/main-menu/main-menu
+include ../components/scroll-up/scroll-up
+
+//- inputs
+//- include ../components/input/input-block/input-block
+//- include ../components/input/input-btn/input-btn
+//- include ../components/input/input-checkbox/input-checkbox
+//- include ../components/input/input-error/input-error
+//- include ../components/input/input-field/input-field
+//- include ../components/input/input-icon/input-icon
+//- include ../components/input/input-radio/input-radio
+//- include ../components/input/input-select/input-select
+//- include ../components/input/input-textarea/input-textarea
+
+-const pageSettings = {}
+-pageSettings.title = '';
+-pageSettings.useSocialMetaTags = false;
+
+-const jv0 = 'javascript:void(0)';
+
+block vars
+
+doctype html
+html(lang='ru')
+    include ../components/head/head
+
+    body
+        |%=symbols=%
+
+        +wrapper
+            +header()
+            +main-menu()
+            +scroll-up
+
+            block content
+
+            +footer()
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        script(src='%=static=%js/main%=hash=%%=min=%.js')
+

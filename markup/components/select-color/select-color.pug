@@ -1,0 +1,9 @@
+mixin select-color(data)
+    +b.select-color&attributes(attributes)
+        if data.clearBtn
+            +e.BUTTON(type='button' title='Очистить').clear.js-select-color-clear
+                +fa-icon('close')
+
+        each item, index in data.items
+            +e.INPUT.input(name='color' value=index type='checkbox' id='select-color-' + index)
+            +e.LABEL.label(for='select-color-' + index title=item.name style='background:' + item.color)

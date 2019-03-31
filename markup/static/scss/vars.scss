@@ -1,0 +1,79 @@
+// Colors
+// @import ('open-color.scss')
+
+// =============================================================================
+// Colors block
+// =============================================================================
+
+
+// =============================================================================
+// Font family
+// =============================================================================
+$font-family: 'Play', sans-serif;
+$font-family--input: $font-family;
+
+// =============================================================================
+// Font size
+// =============================================================================
+$font-size-root: 16;
+$font-size: ($font-size-root * 1px);
+
+// =============================================================================
+// Font size h1-h6
+// =============================================================================
+$font-size--h1: rem(36);
+$font-size--h2: rem(30);
+$font-size--h3: rem(24);
+$font-size--h4: rem(18);
+$font-size--h5: rem(14);
+$font-size--h6: rem(12);
+
+// =============================================================================
+// Site variable
+// =============================================================================
+$color-root-gray: #333333;
+$color-root-gray-light: #e5e5e5;
+$color-root-gray-light-2: #666666;
+$color-root-gray-light-1: #999999;
+$color-root-red-1: #fa5252;
+$color-root-red-2: #e03131;
+
+$color-gray: #444;
+$color-background: #ffffff;
+$color-text: $color-root-gray-light-2;
+$color-link: $color-root-gray;
+$color-link--hover: #e83f33;
+$color-new-tag: #fff764;
+
+$transition-link: 0.3s all ease;
+$max-width: 1170px;
+
+/* HEADER */
+$header-top-background: #4D2D0A;
+$header-background: #ffffff;
+$header-color-icon: $color-text;
+
+/* SANDWICH */
+$sandwich-width: rem(30, $font-size-root);
+$sandwich-background: #dedddb;
+
+/* FOOTER */
+$footer-background: $color-root-gray;
+$footer-bottom-background: #222;
+$footer-color-icon: #28a19b;
+$footer-color-text: #dedddb;
+
+// $input-color: #2b93da;
+// $input-color--focus: $oc-blue-2;
+// $input-color--error: $oc-red-5;
+// $input-color--checked: $oc-cyan-5;
+
+// =============================================================================
+// Screen size
+// =============================================================================
+$screen-sm:  320px;
+$screen-xsm: 375px;
+$screen-md:  425px;
+$screen-lg:  768px;
+$screen-xl:  1024px;
+$screen-xxl: $max-width;

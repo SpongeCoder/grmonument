@@ -1,0 +1,17 @@
+.product-characteristics {
+    &__title {
+        margin-top: 0;
+    }
+
+    &__table {
+    }
+
+    &__row {
+        padding-bottom: .5rem;
+        margin-bottom: .5rem;
+
+        color: $color-root-gray;
+
+        border-bottom: 1px solid $color-root-gray-light;
+    }
+}

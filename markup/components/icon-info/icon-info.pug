@@ -1,0 +1,7 @@
+mixin icon-info(data)
+    .icon-info&attributes(attributes)
+        .icon-info__icon
+            +fa-icon(data.icon)
+        .icon-info__text
+            .icon-info__name= data.name
+            .icon-info__desc= data.desc
