@@ -1,11 +1,16 @@
 /* Your custom fonts here */
 
 @include font-face('Rouble', '../fonts/Rouble/Rouble', normal, normal, $exts: woff svg ttf);
-@include font-face('FontAwesome', '../fonts/line-awesome/line-awesome', normal, normal, $exts: woff svg ttf);
+// @include font-face('FontAwesome', '../fonts/line-awesome/line-awesome', normal, normal, $exts: woff svg ttf);
 
-@include font-face('Play', '../fonts/Play/Play-Regular', normal, normal, $exts: ttf);
-@include font-face('Play', '../fonts/Play/Play-Bold', bold, normal, $exts: ttf);
+@include font-face('Proxima Nova', '../fonts/Proxima Nova/ProximaNova-Regular', normal, normal, $exts: woff ttf);
+@include font-face('Proxima Nova', '../fonts/Proxima Nova/ProximaNova-RegularIt', normal, italic, $exts: woff ttf);
+@include font-face('Proxima Nova', '../fonts/Proxima Nova/ProximaNova-Bold', bold, normal, $exts: woff ttf);
+@include font-face('Proxima Nova', '../fonts/Proxima Nova/ProximaNova-BoldIt', bold, italic, $exts: woff ttf);
+@include font-face('Proxima Nova', '../fonts/Proxima Nova/ProximaNovaCond-Semibold', 600, normal, $exts: woff ttf);
+@include font-face('Proxima Nova', '../fonts/Proxima Nova/ProximaNovaCond-SemiboldIt', 600, italic, $exts: woff ttf);
 
-@include font-face('Ubuntu', '../fonts/Ubuntu/Ubuntu-Regular', normal, normal, $exts: ttf);
-@include font-face('Ubuntu', '../fonts/Ubuntu/Ubuntu-Bold', bold, normal, $exts: ttf);
-@include font-face('Ubuntu', '../fonts/Ubuntu/Ubuntu-BoldItalic', bold, italic, $exts: ttf);
+@include font-face('PT Serif', '../fonts/PT Serif/PT_Serif-Web-Bold', bold, normal, $exts: ttf);
+@include font-face('PT Serif', '../fonts/PT Serif/PT_Serif-Web-BoldItalic', bold, italic, $exts: ttf);
+@include font-face('PT Serif', '../fonts/PT Serif/PT_Serif-Web-Italic', normal, italic, $exts: ttf);
+@include font-face('PT Serif', '../fonts/PT Serif/PT_Serif-Web-Regular', normal, normal, $exts: ttf);

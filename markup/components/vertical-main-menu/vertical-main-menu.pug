@@ -1,0 +1,9 @@
+mixin vertical-main-menu(data)
+    .vertical-main-menu
+        each item in data.data
+            .vertical-main-menu__item
+                .vertical-main-menu__title= item.title
+                UL.vertical-main-menu__list
+                    each itemList in item.items
+                        LI
+                            a(href=jv0)= itemList

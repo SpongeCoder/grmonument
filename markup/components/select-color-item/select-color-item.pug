@@ -1,8 +1,0 @@
-mixin select-color-item(data)
-    +b.select-color-item&attributes(attributes)
-        each item, index in data.items
-            if item.checked
-                +e.INPUT.input(name='color' checked value=index type='radio' id='select-color-' + index)
-            else
-                +e.INPUT.input(name='color' value=index type='radio' id='select-color-' + index)
-            +e.LABEL.label(for='select-color-' + index title=item.name style='background:' + item.color)

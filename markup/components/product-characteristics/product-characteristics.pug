@@ -1,9 +1,0 @@
-mixin product-characteristics(data)
-    +b.product-characteristics&attributes(attributes)
-        +e.table
-            each item in data.items
-                +e.row
-                    b= item.name
-                    | :
-                    |
-                    = item.value

@@ -1,7 +1,0 @@
-mixin tabs(data)
-    +b.tabs&attributes(attributes)
-        each item in data.items
-            if item.active
-                +e.item(data-selector=item.selector data-index=item.index class='is-active')= item.name
-            else
-                +e.item(data-selector=item.selector data-index=item.index)= item.name

@@ -1,10 +1,8 @@
 include header-top-menu/header-top-menu
 include logo/logo
-include sandwich/sandwich
-include ../search-form/search-form
+include header-phone/header-phone
+include header-work-time/header-work-time
 include ../address/address
-include ../icon-wishlist/icon-wishlist
-include ../icon-basket/icon-basket
 
 mixin header()
     .header
@@ -16,6 +14,5 @@ mixin header()
         .header__middle
             +wrapp.header__middle-wrapp
                 +logo
-                +search-form
-                +icon-wishlist
-                +icon-basket
+                +header-phone
+                +header-work-time

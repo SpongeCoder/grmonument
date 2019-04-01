@@ -1,9 +1,0 @@
-mixin select-size(data)
-    +b.select-size&attributes(attributes)
-        each item in data
-            +e.item
-                if item.checked
-                    +e.INPUT.field(type="radio" name=item.name id=item.id value=item.value checked)
-                else
-                    +e.INPUT.field(type="radio" name=item.name id=item.id value=item.value)
-                +e.LABEL.label(for=item.id)= item.label

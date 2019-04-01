@@ -1,0 +1,42 @@
+.vertical-main-menu {
+    &__item {}
+    &__title {
+        border: none;
+        color: #ffffff;
+    }
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        background-color: #fff;
+
+        a {
+            position: relative;
+            padding-left: 45px;
+            color: $color-text;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                background-image: url('../img/minified-svg/small-block-decor.svg');
+                background-size: rem(33) rem(29);
+                width: rem(33);
+                height: rem(29);
+                transition: opacity 0.3s;
+            }
+
+            &:hover {
+                color: #DA8836;
+                text-decoration: none;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+// dev\static\img\minified-svg\small-block-decor.svg

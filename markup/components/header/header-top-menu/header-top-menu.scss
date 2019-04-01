@@ -1,4 +1,8 @@
 .header-top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     &__list {
         padding: 0;
         margin: 0;
@@ -11,65 +15,12 @@
 
         display: inline-block;
         padding: 0 0 0 rem(8);
-
-        &:hover > .header-top-menu__second-list {
-            display: block;
-        }
-
-        &:first-child .header-top-menu__link {
-            border: none;
-        }
     }
 
     &__link {
         padding-left: rem(10);
 
-        color: $color-text;
-
-        border-left: 1px #ccc solid;
-
-        .fa {
-            margin-left: 5px;
-        }
-    }
-
-    &__second-list {
-        position: absolute;
-        z-index: 2;
-        top: 100%;
-        left: 0;
-
-        display: none;
-        min-width: rem(140);
-        padding: rem(5) 0;
-        margin: 0;
-
-        border: 1px solid rgba(0, 0, 0, .1);
-        border-radius: rem(4);
-        background-color: #fff;
-        box-shadow: 0 rem(6) rem(12) rgba(0, 0, 0, .175);
-        list-style-type: none;
-    }
-
-    &__second-element {
-        padding: rem(4);
-
-        &--line {
-            height: 1px;
-            padding: 0;
-            margin: rem(5) 0;
-
-            background-color: $color-root-gray-light;
-        }
-    }
-
-    &__second-link {
-        padding: 0 rem(8);
-
-        border: none;
-    }
-
-    &__second-link-text {
+        color: $color-link-text;
     }
 }
 

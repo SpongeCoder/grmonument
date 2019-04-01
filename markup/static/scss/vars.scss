@@ -4,12 +4,14 @@
 // =============================================================================
 // Colors block
 // =============================================================================
-
+$color-grow: #4D2D0A;
+$color-gray: #E5E5E5;
+$color-link-text: #EBCCAD;
 
 // =============================================================================
 // Font family
 // =============================================================================
-$font-family: 'Play', sans-serif;
+$font-family: 'Proxima Nova', sans-serif;
 $font-family--input: $font-family;
 
 // =============================================================================
@@ -31,25 +33,14 @@ $font-size--h6: rem(12);
 // =============================================================================
 // Site variable
 // =============================================================================
-$color-root-gray: #333333;
-$color-root-gray-light: #e5e5e5;
-$color-root-gray-light-2: #666666;
-$color-root-gray-light-1: #999999;
-$color-root-red-1: #fa5252;
-$color-root-red-2: #e03131;
-
-$color-gray: #444;
-$color-background: #ffffff;
-$color-text: $color-root-gray-light-2;
-$color-link: $color-root-gray;
-$color-link--hover: #e83f33;
-$color-new-tag: #fff764;
+$color-background: $color-gray;
+$color-text: #383838;
 
 $transition-link: 0.3s all ease;
 $max-width: 1170px;
 
 /* HEADER */
-$header-top-background: #4D2D0A;
+$header-top-background: $color-grow;
 $header-background: #ffffff;
 $header-color-icon: $color-text;
 
@@ -58,10 +49,7 @@ $sandwich-width: rem(30, $font-size-root);
 $sandwich-background: #dedddb;
 
 /* FOOTER */
-$footer-background: $color-root-gray;
-$footer-bottom-background: #222;
-$footer-color-icon: #28a19b;
-$footer-color-text: #dedddb;
+$footer-background: $color-grow;
 
 // $input-color: #2b93da;
 // $input-color--focus: $oc-blue-2;

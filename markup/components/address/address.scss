@@ -1,11 +1,20 @@
 .address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     &__icon {
         display: inline-block;
         margin-right: rem(5);
 
-        font-size: 18px;
+        font-size: rem(18);
+
+        .icon {
+            fill: $color-link-text;
+        }
     }
 
     &__name {
+        color: $color-link-text;
     }
 }

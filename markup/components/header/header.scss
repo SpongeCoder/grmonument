@@ -1,15 +1,17 @@
 .header {
-    padding-bottom: 50px;
+    padding-bottom: rem(50);
 
     background-color: white;
 
-    &__city {
-    }
-
     &__top {
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-between;
+        height: rem(50);
         padding: rem(8) rem(25);
 
-        font-size: rem(14);
+        font-size: rem(18);
 
         background-color: $header-top-background;
     }
@@ -21,7 +23,7 @@
     }
 
     &__middle {
-        height: rem(107);
+        height: rem(156);
     }
 
     &__middle-wrapp {
