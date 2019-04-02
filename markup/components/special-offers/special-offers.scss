@@ -1,0 +1,45 @@
+.special-offers {
+    box-sizing: border-box;
+    width: 100%;
+    height: rem(631);
+    padding: rem(50) rem(20);
+
+    border-radius: 5px;
+    background: rgba(77, 45, 10, 0.7);
+
+    &--main {
+        margin-top: rem(76);
+        margin-bottom: rem(73);
+    }
+
+    &__title {
+        margin: 0 0 rem(56) 0;
+
+        font-family: 'PT Serif';
+        font-size: rem(40);
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    &__items {
+        width: 76.6%;
+        margin: 0 auto rem(55) auto;
+
+        .memorial-block {
+            margin-right: rem(34);
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__icon {
+        text-align: center;
+
+        .icon {
+            fill: none;
+        }
+    }
+}

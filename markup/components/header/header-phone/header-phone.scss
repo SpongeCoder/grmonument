@@ -1,2 +1,43 @@
 .header-phone {
+    margin-top: rem(23);
+
+    &__text {
+        margin-bottom: rem(27);
+
+        font-size: rem(16);
+        font-weight: bold;
+        color: #4d2d0a;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 37px;
+
+        font-size: 16px;
+        color: #ffffff;
+        text-align: center;
+
+        span {
+            display: inline-block;
+            margin-left: 22px;
+        }
+
+        &--whatsapp {
+            margin-right: 32px;
+
+            background-image: url('../img/general/whatsapp_img.png');
+        }
+
+        &--viber {
+            background-image: url('../img/general/viber_img.png');
+        }
+    }
 }

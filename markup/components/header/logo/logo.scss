@@ -2,9 +2,10 @@
     position: relative;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    margin-right: 30px;
+    margin-top: rem(5);
+    margin-right: rem(20);
 
     &:hover {
         text-decoration: none;
@@ -16,11 +17,13 @@
     }
 
     &__text {
-        padding-left: rem(15);
+        padding-left: rem(11);
+        margin-top: rem(36);
 
         font-family: 'PT Serif';
         font-size: rem(38);
         font-weight: bold;
+        line-height: rem(35);
         color: $color-grow;
     }
 }

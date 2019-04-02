@@ -1,2 +1,34 @@
 .main-catalog {
+    margin-top: rem(70);
+    margin-bottom: rem(20);
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: rem(30);
+
+        .memorial-block {
+            margin-bottom: rem(35);
+        }
+    }
+
+    &__footer {
+        text-align: center;
+    }
+
+    &__link {
+        font-size: rem(18);
+        color: #ffffff;
+        text-transform: uppercase;
+        background-color: #DA8836;
+        border-radius: rem(5);
+        width: rem(248);
+        height: rem(45);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
 }

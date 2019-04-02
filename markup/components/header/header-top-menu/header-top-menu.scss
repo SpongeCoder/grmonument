@@ -14,13 +14,13 @@
         position: relative;
 
         display: inline-block;
-        padding: 0 0 0 rem(8);
+        margin-right: rem(24);
     }
 
     &__link {
-        padding-left: rem(10);
-
+        font-size: rem(16);
         color: $color-link-text;
+        letter-spacing: 0.02em;
     }
 }
 

@@ -1,0 +1,10 @@
+include ../memorial-block/memorial-block
+
+mixin special-offers(data)
+    .special-offers&attributes(attributes)
+        .special-offers__title Специальные предложения
+        .special-offers__items
+            each item in data.items
+                +memorial-block(item)
+        .special-offers__icon
+            +icon({icon: 'decor-line', iconWidth:'410', iconHeight:'29'})

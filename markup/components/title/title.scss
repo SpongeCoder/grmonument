@@ -4,8 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+    padding-bottom: rem(10);
+    margin-top: rem(20);
+    margin-bottom: rem(20);
 
     &__icon {
         position: relative;
@@ -73,7 +74,7 @@
 
         display: inline-block;
         flex: 1 0 auto;
-        margin: 0 30px;
+        margin: 0 rem(45);
 
         font-family: 'PT Serif';
         font-size: rem(28);

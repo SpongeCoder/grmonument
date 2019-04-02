@@ -1,2 +1,28 @@
 .header-work-time {
+    margin-top: rem(23);
+
+    text-align: right;
+
+    &__free {
+        margin-bottom: rem(7);
+
+        font-size: rem(16);
+        font-weight: bold;
+        color: #4d2d0a;
+    }
+
+    &__phone {
+        display: block;
+        margin-bottom: rem(10);
+
+        font-size: rem(24);
+        font-weight: bold;
+        color: #4d2d0a;
+    }
+
+    &__day,
+    &__holiday {
+        font-size: rem(13);
+        color: #000000;
+    }
 }

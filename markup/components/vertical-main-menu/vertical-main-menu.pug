@@ -2,8 +2,25 @@ mixin vertical-main-menu(data)
     .vertical-main-menu
         each item in data.data
             .vertical-main-menu__item
-                .vertical-main-menu__title= item.title
-                UL.vertical-main-menu__list
-                    each itemList in item.items
-                        LI
-                            a(href=jv0)= itemList
+                if item.index
+                    .vertical-main-menu__head.is-active
+                        .vertical-main-menu__title= item.title
+                        .vertical-main-menu__icon
+                            +icon({icon: 'triangle', iconWidth:'12', iconHeight:'9'})
+
+                else
+                    .vertical-main-menu__head
+                        .vertical-main-menu__title= item.title
+                        .vertical-main-menu__icon
+                            +icon({icon: 'triangle', iconWidth:'12', iconHeight:'9'})
+
+                if item.index
+                    UL.vertical-main-menu__list(style="display: block")
+                        each itemList in item.items
+                            LI
+                                a(href=jv0)= itemList
+                else
+                    UL.vertical-main-menu__list
+                        each itemList in item.items
+                            LI
+                                a(href=jv0)= itemList

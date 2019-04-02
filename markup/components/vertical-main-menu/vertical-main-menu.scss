@@ -1,30 +1,80 @@
 .vertical-main-menu {
-    margin-right: 35px;
+    margin-top: rem(15);
+    margin-right: rem(35);
+    margin-bottom: rem(20);
 
     &__item {
+        margin-bottom: rem(2);
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: rem(275);
+        min-height: rem(54);
+        cursor: pointer;
+
+        background: #d4872b;
+
+        transition: background 0.3s;
+
+        &.is-active {
+            background-color: #b47323;
+
+            .vertical-main-menu__icon {
+                transform: rotate(0deg);
+            }
+        }
+
+        &:hover {
+            background-color: #b47323;
+        }
     }
 
     &__title {
-        width: rem(275);
-        height: rem(54);
+        margin: rem(13) 0 rem(13) rem(38);
 
+        font-size: rem(18);
+        font-weight: 600;
         color: #ffffff;
+        letter-spacing: rem(1.8);
+        text-transform: uppercase;
+    }
 
-        border: none;
-        background: #d4872b;
+    &__icon {
+        margin: rem(-5) rem(19) 0 0;
+
+        transform: rotate(60deg);
+
+        transition: transform 0.3s;
     }
 
     &__list {
+        display: none;
         padding: 0;
         margin: 0;
 
+        border: 1px solid #ebccad;
         background-color: #fff;
         list-style-type: none;
+
+        li {
+            margin: rem(13) 0;
+
+            &:first-child {
+                margin-top: rem(21);
+            }
+
+            &:last-child {
+                margin-bottom: rem(25);
+            }
+        }
 
         a {
             position: relative;
 
-            padding-left: rem(45);
+            padding-left: rem(70);
 
             color: $color-text;
 
@@ -33,7 +83,7 @@
 
                 position: absolute;
                 top: 0;
-                left: 0;
+                left: rem(20);
 
                 width: rem(33);
                 height: rem(29);

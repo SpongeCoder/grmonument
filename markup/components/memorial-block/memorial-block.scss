@@ -2,19 +2,44 @@
     display: inline-block;
     width: rem(274);
     height: rem(340);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+
+        .memorial-block__photo img {
+            transform: scale(1.06);
+        }
+
+        .memorial-block__name {
+            text-decoration: underline;
+        }
+    }
 
     &__photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: rem(239);
+
         border-top: 1px solid #ebccad;
         border-right: 1px solid #ebccad;
         border-left: 1px solid #ebccad;
         background-color: #fff;
+
+        img {
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            transition: transform 0.3s;
+        }
     }
 
     &__info {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: flex-start;
         height: rem(101);
 
         background-color: #fbf7f3;
@@ -24,18 +49,30 @@
         font-size: rem(18);
         font-weight: bold;
         color: $color-grow;
+        letter-spacing: -0.02em;
+        margin-left: rem(28);
+        margin-top: rem(25);
+        margin-bottom: rem(7);
     }
 
     &__price {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        width: 81%;
+        margin-left: rem(25);
 
         font-size: rem(22);
 
         &-old {
             color: #383838;
+
+            span {
+                &:first-child {
+                    text-decoration: line-through;
+                    text-decoration-color: #383838;
+                }
+            }
         }
 
         &-value {

@@ -1,2 +1,18 @@
-.main-catalog {
+.decor-index-block {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(100);
+    height: rem(82);
+
+    background-image: url("../img/minified-svg/decor-block.svg");
+    background-size: rem(100) rem(82);
+
+    span {
+        font-size: rem(30);
+        font-weight: bold;
+        color: #4d2d0a;
+    }
 }

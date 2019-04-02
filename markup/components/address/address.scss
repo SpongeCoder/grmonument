@@ -5,9 +5,7 @@
 
     &__icon {
         display: inline-block;
-        margin-right: rem(5);
-
-        font-size: rem(18);
+        margin-right: rem(12);
 
         .icon {
             fill: $color-link-text;
@@ -15,6 +13,7 @@
     }
 
     &__name {
+        font-size: rem(18);
         color: $color-link-text;
     }
 }

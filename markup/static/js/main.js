@@ -13,6 +13,8 @@ let svg4everybody = require('static/js/plugins/svg4everybody.min.js');
 
 svg4everybody();
 
+import 'components/vertical-main-menu/vertical-main-menu.js';
+
 // import 'components/header/sandwich/sandwich.js';
 // import 'components/main-menu/main-menu.js';
 // import 'components/main-slider/main-slider.js';

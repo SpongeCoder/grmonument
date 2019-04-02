@@ -66,19 +66,19 @@ var data = {
     memorialBlocksDiscount: {
         items: [
             {
-                img: '1',
+                img: '3',
                 name: 'Мемориальный комплекс',
                 price: '600 000',
                 oldPrice: '680 000',
             },
             {
-                img: '2',
+                img: '1',
                 name: 'Мемориальный комплекс',
                 price: '850 000',
                 oldPrice: '950 000'
             },
             {
-                img: '3',
+                img: '2',
                 name: 'Мемориальный комплекс',
                 price: '450 000',
                 oldPrice: '550 000'

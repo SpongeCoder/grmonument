@@ -1,5 +1,5 @@
 mixin memorial-block(data)
-    A.memorial-block
+    A(href=jv0).memorial-block
         .memorial-block__photo
             img(src="static/img/general/trash/monument/"+data.img+'.png', alt="Мемориальный комплекс")
         .memorial-block__info
@@ -7,7 +7,7 @@ mixin memorial-block(data)
             .memorial-block__price
                 if data.oldPrice
                     .memorial-block__price-old
-                        = data.oldPrice
+                        span= data.oldPrice
                         |
                         |
                         <span class="rub"></span>
