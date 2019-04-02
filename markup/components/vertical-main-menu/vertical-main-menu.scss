@@ -1,35 +1,50 @@
 .vertical-main-menu {
-    &__item {}
-    &__title {
-        border: none;
-        color: #ffffff;
+    margin-right: 35px;
+
+    &__item {
     }
+
+    &__title {
+        color: #ffffff;
+        background: #D4872B;
+        width: rem(275);
+        height: rem(54);
+        border: none;
+    }
+
     &__list {
         padding: 0;
         margin: 0;
-        list-style-type: none;
+
         background-color: #fff;
+        list-style-type: none;
 
         a {
             position: relative;
-            padding-left: 45px;
+
+            padding-left: rem(45);
+
             color: $color-text;
 
             &::before {
                 content: '';
+
                 position: absolute;
-                left: 0;
                 top: 0;
-                opacity: 0;
-                background-image: url('../img/minified-svg/small-block-decor.svg');
-                background-size: rem(33) rem(29);
+                left: 0;
+
                 width: rem(33);
                 height: rem(29);
+
+                background-image: url('../img/minified-svg/small-block-decor.svg');
+                background-size: rem(33) rem(29);
+                opacity: 0;
+
                 transition: opacity 0.3s;
             }
 
             &:hover {
-                color: #DA8836;
+                color: #da8836;
                 text-decoration: none;
 
                 &::before {
@@ -39,4 +54,4 @@
         }
     }
 }
-// dev\static\img\minified-svg\small-block-decor.svg
+

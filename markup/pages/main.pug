@@ -1,15 +1,8 @@
 extends ../layouts/default
 
-//- include ../components/main-banners/main-banners
-//- include ../components/icon-info-blocks/icon-info-blocks
-//- include ../components/sliders/sliders
-//- include ../components/sliders-manufactures/sliders-manufactures
-//- include ../components/banner/banner
-//- include ../components/catalog-blocks/catalog-blocks
-//- include ../components/subscribe-form/subscribe-form
-//- include ../components/main-news/main-news
-//- include ../components/news-block/news-block
 include ../components/vertical-main-menu/vertical-main-menu
+include ../components/our-advantages/our-advantages
+include ../components/memorial-block/memorial-block
 
 block vars
     -pageSettings.title = 'Главная';
@@ -25,13 +18,12 @@ block content
 
             p Изготовление памятников – приоритетное направление деятельности Тульского Камнеобрабатывающего Комбината. Выполненный из натурального камня, красивый и ухоженный монумент воплотит чувство выполненного долга перед теми, кто всегда будет жить в наших сердцах. Выбор памятного сооружения для безвременно ушедшего – сложная процедура, сопровождаемая тем, что скорбящие переживают трагедию и принимать подобные решения в таком состоянии очень тяжело. Наша компания предлагает профессиональные услуги по производству и монтажу ритуальных надгробий, способных украсить место захоронения наилучшим образом.
 
-            h3 Наши преимущества
+            +our-advantages(ourAdvantages)
+    +wrapp
+        +title('Каталог продукции')
 
-    //-     +sliders(sliders.bestsellers)
-    //- +wrapp.wrapp--flex
-    //-     +banner
-    //-     +sliders(sliders.new)
-    //- +wrapp.wrapp--flex
-    //-     +sliders(sliders.sale)
-    //-     +banner
+        p Обеспечение достойных почестей родным людям после их ухода в иной мир – наш долг. Одним из способов поддержания памяти о покойных выступает оформление участка на кладбище. Красивый ритуальный ансамбль выразит любовь и уважение, а также увековечит память о дорогом человеке.
 
+        +memorial-block('1')
+        +memorial-block('2')
+        +memorial-block('3')

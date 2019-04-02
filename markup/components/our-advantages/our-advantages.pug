@@ -1,0 +1,9 @@
+mixin our-advantages(data)
+    .our-advantages
+        h3.our-advantages__title Наши преимущества
+        .our-advantages__lists
+            each item in data.list
+                .our-advantages__item
+                    h4.our-advantages__title= item.title
+                    p.our-advantages__desc= item.desc
+

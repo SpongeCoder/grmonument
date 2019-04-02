@@ -1,15 +1,65 @@
 .title {
     position: relative;
-
+    display: flex;
     padding-bottom: 10px;
     margin-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+
+    &__icon {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: #DA8836;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: rem(33);
+            height: rem(29);
+            background-image: url('../img/minified-svg/small-block-decor.svg');
+            background-size: rem(33) rem(29);
+            top: rem(-13);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: rem(7);
+            height: rem(7);
+            background: #DA8836;
+            transform: rotate(-45deg);
+            top: rem(-2);
+        }
+
+        &--left {
+            margin-left: rem(32);
+            &::before {
+                left: rem(-32);
+            }
+            &::after {
+                right: -1px;
+            }
+        }
+
+        &--right {
+            margin-right: rem(32);
+            &::before {
+                right: rem(-32);
+                transform: rotate(180deg)
+            }
+            &::after {
+                left: -1px;
+            }
+        }
+    }
 
     &__name {
         position: relative;
 
         display: inline-block;
-        margin-top: 0;
-        margin-bottom: 0;
+        flex: 1 0 auto;
+        margin: 0 30px;
 
         font-family: 'PT Serif';
         font-size: rem(28);

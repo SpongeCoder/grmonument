@@ -1,0 +1,34 @@
+.memorial-block {
+    display: inline-block;
+    width: rem(274);
+    height: rem(340);
+
+    &__photo {
+        border-top: 1px solid #ebccad;
+        border-right: 1px solid #ebccad;
+        border-left: 1px solid #ebccad;
+        background-color: #fff;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: rem(101);
+
+        background-color: #fbf7f3;
+    }
+
+    &__name {
+        font-size: rem(18);
+        font-weight: bold;
+        color: $color-grow;
+    }
+
+    &__price {
+        font-size: rem(22);
+        font-weight: bold;
+        color: #000000;
+    }
+}
