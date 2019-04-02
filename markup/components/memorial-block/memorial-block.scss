@@ -2,6 +2,7 @@
     display: inline-block;
     width: rem(274);
     height: rem(340);
+
     text-decoration: none;
 
     &:hover {
@@ -31,6 +32,7 @@
             display: block;
             max-width: 90%;
             max-height: 90%;
+
             transition: transform 0.3s;
         }
     }
@@ -46,13 +48,14 @@
     }
 
     &__name {
+        margin-top: rem(25);
+        margin-bottom: rem(7);
+        margin-left: rem(28);
+
         font-size: rem(18);
         font-weight: bold;
         color: $color-grow;
         letter-spacing: -0.02em;
-        margin-left: rem(28);
-        margin-top: rem(25);
-        margin-bottom: rem(7);
     }
 
     &__price {
