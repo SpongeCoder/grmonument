@@ -1,7 +1,18 @@
 mixin memorial-block(data)
     A.memorial-block
         .memorial-block__photo
-            img(src="static/img/general/trash/monument/"+data+'.png', alt="Мемориальный комплекс")
+            img(src="static/img/general/trash/monument/"+data.img+'.png', alt="Мемориальный комплекс")
         .memorial-block__info
-            .memorial-block__name Мемориальный комплекс
-            .memorial-block__price 600 000 <span class="rub"></span>
+            .memorial-block__name= data.name
+            .memorial-block__price
+                if data.oldPrice
+                    .memorial-block__price-old
+                        = data.oldPrice
+                        |
+                        |
+                        <span class="rub"></span>
+                .memorial-block__price-value
+                    = data.price
+                    |
+                    |
+                    <span class="rub"></span>

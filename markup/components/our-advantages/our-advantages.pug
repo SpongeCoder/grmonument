@@ -1,9 +1,14 @@
+include ../decor-index-block/decor-index-block
+
 mixin our-advantages(data)
     .our-advantages
         h3.our-advantages__title Наши преимущества
         .our-advantages__lists
             each item in data.list
                 .our-advantages__item
-                    h4.our-advantages__title= item.title
-                    p.our-advantages__desc= item.desc
+                    .our-advantages__item-left
+                        +decor-index-block(item.index).our-advantages__decor-block
+                    .our-advantages__item-right
+                        h4.our-advantages__title= item.title
+                        p.our-advantages__desc= item.desc
 

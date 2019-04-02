@@ -1,0 +1,9 @@
+include ../memorial-block/memorial-block
+
+mixin main-catalog()
+    .main-catalog
+        .main-catalog__items
+            each item in memorialBlocks.items
+                +memorial-block(item)
+        .main-catalog__footer
+            a.main-catalog__link Перейти в каталог

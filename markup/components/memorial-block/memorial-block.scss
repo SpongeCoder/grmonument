@@ -27,8 +27,20 @@
     }
 
     &__price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
         font-size: rem(22);
-        font-weight: bold;
-        color: #000000;
+
+        &-old {
+            color: #383838;
+        }
+
+        &-value {
+            font-weight: bold;
+            color: #000000;
+        }
     }
 }

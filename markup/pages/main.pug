@@ -3,6 +3,7 @@ extends ../layouts/default
 include ../components/vertical-main-menu/vertical-main-menu
 include ../components/our-advantages/our-advantages
 include ../components/memorial-block/memorial-block
+include ../components/main-catalog/main-catalog
 
 block vars
     -pageSettings.title = 'Главная';
@@ -24,6 +25,4 @@ block content
 
         p Обеспечение достойных почестей родным людям после их ухода в иной мир – наш долг. Одним из способов поддержания памяти о покойных выступает оформление участка на кладбище. Красивый ритуальный ансамбль выразит любовь и уважение, а также увековечит память о дорогом человеке.
 
-        +memorial-block('1')
-        +memorial-block('2')
-        +memorial-block('3')
+        +main-catalog

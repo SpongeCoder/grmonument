@@ -5,11 +5,13 @@
     }
 
     &__title {
-        color: #ffffff;
-        background: #D4872B;
         width: rem(275);
         height: rem(54);
+
+        color: #ffffff;
+
         border: none;
+        background: #d4872b;
     }
 
     &__list {
