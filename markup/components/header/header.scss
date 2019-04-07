@@ -1,5 +1,10 @@
 .header {
-    padding-bottom: rem(50);
+    position: fixed;
+    z-index: 35;
+    top: 0;
+    left: 0;
+
+    width: 100%;
 
     background-color: white;
 

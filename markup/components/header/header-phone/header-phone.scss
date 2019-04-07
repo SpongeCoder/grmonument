@@ -39,5 +39,10 @@
         &--viber {
             background-image: url('../img/general/viber_img.png');
         }
+
+        &:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
     }
 }

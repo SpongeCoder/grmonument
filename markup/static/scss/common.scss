@@ -15,7 +15,11 @@ body {
 	font-family: $font-family;
 	color: $color-text;
 	position: relative;
-    background: $color-background;
+    background-color: $color-background;
+    background-image: url('../img/general/main_fon.jpg');
+    background-size: 1920px 880px;
+    background-position: center 240px;
+    background-repeat: no-repeat;
 }
 
 select, input, textarea {
@@ -76,7 +80,7 @@ a {
     transition: $transition-link;
 
     &:hover {
-        text-decoration: underline;
+        color: #B47323;
     }
 }
 
@@ -89,7 +93,7 @@ a {
 .is-hide { display: none; }
 
 .content {
-    margin-top: 25px;
+    margin-top: 256px;
     margin-bottom: 50px;
 }
 

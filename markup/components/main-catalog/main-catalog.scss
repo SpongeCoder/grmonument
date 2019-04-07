@@ -32,5 +32,11 @@
 
         border-radius: rem(5);
         background-color: #da8836;
+
+        &:hover {
+            color: #ffffff;
+
+            background-color: #b47323;
+        }
     }
 }
