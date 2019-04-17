@@ -1,12 +1,20 @@
 .header-phone {
     margin-top: rem(23);
 
+    @include below(1023px) {
+        margin-top: 0;
+    }
+
     &__text {
         margin-bottom: rem(27);
 
         font-size: rem(16);
         font-weight: bold;
         color: #4d2d0a;
+
+        @include below(1023px) {
+            display: none;
+        }
     }
 
     &__buttons {
@@ -18,31 +26,51 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 200px;
-        height: 37px;
+        width: rem(200);
+        height: rem(37);
+        background-size: 100% 100%;
 
-        font-size: 16px;
+        font-size: rem(16);
         color: #ffffff;
         text-align: center;
 
         span {
             display: inline-block;
-            margin-left: 22px;
+            margin-left: rem(22);
+
+            @include below(1023px) {
+                display: none;
+            }
         }
 
         &--whatsapp {
-            margin-right: 32px;
+            margin-right: rem(32);
 
             background-image: url('../img/general/whatsapp_img.png');
+
+            @include below(1023px) {
+                background-position-x: -3px;
+            }
         }
 
         &--viber {
             background-image: url('../img/general/viber_img.png');
+
+            @include below(1023px) {
+                background-color: #7B519D;
+            }
         }
 
         &:hover {
             color: #ffffff;
             text-decoration: underline;
+        }
+
+        @include below(1023px) {
+            overflow: hidden;
+            width: rem(38);
+            border-radius: rem(6);
+            background-size: auto;
         }
     }
 }

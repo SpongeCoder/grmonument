@@ -4,16 +4,16 @@
     This file can be used as entry point for webpack!
  */
 
-let svg4everybody = require('static/js/plugins/svg4everybody.min.js');
-// import 'slick-carousel';
+import svg4everybody from 'static/js/plugins/svg4everybody.min.js';
+import 'slick-carousel';
 // import 'bootstrap-slider';
 // import 'validate.js';
 
 // import './plugins/flickity.pkgd.min.js';
+import 'components/vertical-main-menu/vertical-main-menu.js';
 
 svg4everybody();
 
-import 'components/vertical-main-menu/vertical-main-menu.js';
 
 // import 'components/header/sandwich/sandwich.js';
 // import 'components/main-menu/main-menu.js';

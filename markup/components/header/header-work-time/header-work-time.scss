@@ -3,6 +3,10 @@
 
     text-align: right;
 
+    @include below(1023px) {
+        display: none;
+    }
+
     &__free {
         margin-bottom: rem(7);
 

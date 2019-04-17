@@ -5,6 +5,18 @@ html {
     height: 100%;
 	min-width: $screen-sm;
 	font-size: $font-size;
+
+    @include below(1242px) {
+        font-size: 15px;
+    }
+
+    @include below(1051px) {
+        font-size: 14px;
+    }
+
+    @include below(1023px) {
+        font-size: $font-size;
+    }
 }
 
 body {
@@ -17,8 +29,8 @@ body {
 	position: relative;
     background-color: $color-background;
     background-image: url('../img/general/main_fon.jpg');
-    background-size: 1920px 880px;
-    background-position: center 240px;
+    background-size: rem(1920) rem(880);
+    background-position: center rem(240);
     background-repeat: no-repeat;
 }
 
@@ -93,8 +105,12 @@ a {
 .is-hide { display: none; }
 
 .content {
-    margin-top: 256px;
-    margin-bottom: 50px;
+    margin-top: rem(256);
+    margin-bottom: rem(50);
+
+    @include below(1023px) {
+        margin-top: rem(80);
+    }
 }
 
 .icon {

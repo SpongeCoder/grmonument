@@ -1,5 +1,7 @@
 .memorial-block {
     display: inline-block;
+    max-width: rem(274);
+    min-width: rem(233);
     width: rem(274);
     height: rem(340);
 
@@ -34,6 +36,16 @@
             max-height: 90%;
 
             transition: transform 0.3s;
+
+            @include below(1210px) {
+                max-width: 88%;
+                max-height: 88%;
+            }
+
+            @include below(1024px) {
+                max-width: 85%;
+                max-height: 85%;
+            }
         }
     }
 
@@ -66,6 +78,10 @@
         margin-left: rem(25);
 
         font-size: rem(22);
+
+        @include below(1242px) {
+            font-size: rem(20);
+        }
 
         &-old {
             color: #383838;

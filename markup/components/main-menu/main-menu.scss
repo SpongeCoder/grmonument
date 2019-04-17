@@ -1,7 +1,7 @@
 .main-menu {
     position: fixed;
     z-index: 35;
-    top: 206px;
+    top: rem(206);
     left: 0;
 
     width: 100%;
@@ -9,6 +9,10 @@
 
     background-color: $color-grow;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+    @include below(1023px) {
+        display: none;
+    }
 
     &__wrapp {
         display: flex;
