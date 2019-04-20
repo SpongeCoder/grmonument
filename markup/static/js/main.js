@@ -11,6 +11,9 @@ import 'slick-carousel';
 
 // import './plugins/flickity.pkgd.min.js';
 import 'components/vertical-main-menu/vertical-main-menu.js';
+import 'components/header/header.js';
+import 'components/mobile-menu/mobile-menu.js';
+import 'components/develop-monument/develop-monument.js';
 
 svg4everybody();
 

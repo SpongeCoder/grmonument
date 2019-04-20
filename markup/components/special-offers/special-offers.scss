@@ -7,6 +7,11 @@
     border-radius: 5px;
     background: rgba(77, 45, 10, 0.7);
 
+    @include below(1023px) {
+        height: rem(453);
+        padding-top: rem(30);
+    }
+
     &--main {
         margin-top: rem(76);
         margin-bottom: rem(73);
@@ -17,6 +22,9 @@
         }
 
         @include below(1023px) {
+            padding-top: rem(29);
+            padding-right: rem(25);
+            padding-left: rem(24);
             margin-top: 0;
         }
     }
@@ -29,25 +37,48 @@
         font-weight: bold;
         color: #ffffff;
         text-align: center;
+
+        @include below(1023px) {
+            margin-bottom: rem(20);
+
+            font-size: rem(24);
+            line-height: rem(28);
+        }
     }
 
     &__items {
-        width: 76.6%;
-        margin: 0 auto rem(55) auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 76.6%;
+        margin: 0 auto rem(55) auto;
+
+        @include below(1210px) {
+            width: 80%;
+        }
+
+        @include below(1023px) {
+            width: 100%;
+            margin-bottom: rem(15);
+        }
 
         .memorial-block {
             margin-right: rem(34);
 
+            @include below(1023px) {
+                margin: 0 auto;
+            }
+
             &:last-child {
                 margin-right: 0;
             }
-        }
 
-        @include below(1210px) {
-            width: 80%;
+            &:nth-child(2),
+            &:nth-child(3) {
+                @include below(1023px) {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -56,6 +87,10 @@
 
         .icon {
             fill: none;
+
+            @include below(1023px) {
+                width: 100%;
+            }
         }
     }
 }

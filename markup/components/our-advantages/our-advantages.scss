@@ -3,6 +3,13 @@
         margin-bottom: rem(60);
 
         font-size: rem(24);
+
+        @include below(1023px) {
+            margin-bottom: rem(26);
+
+            font-size: rem(18);
+            text-align: center;
+        }
     }
 
     &__lists {
@@ -13,10 +20,17 @@
         align-items: flex-start;
         justify-content: flex-start;
         margin-bottom: rem(32);
+
+        @include below(1023px) {
+            margin-bottom: rem(4);
+        }
     }
 
     &__item-left {
         margin-right: rem(25);
+        @include below(1023px) {
+            margin-right: rem(12);
+        }
     }
 
     &__item-right {
@@ -26,9 +40,37 @@
         margin-top: 0;
 
         font-size: rem(18);
+
+        @include below(1023px) {
+            margin-bottom: 10px;
+
+            font-size: rem(14);
+        }
     }
 
     &__desc {
         font-size: rem(16);
+
+        @include below(1023px) {
+            width: 98% !important;
+            margin-top: 10px;
+
+            font-size: rem(14);
+        }
+    }
+
+    &__decor-block {
+        @include below(1023px) {
+            width: rem(55);
+            height: rem(45);
+
+            background-size: rem(55) rem(45);
+        }
+
+        span {
+            @include below(1023px) {
+                font-size: rem(16.5);
+            }
+        }
     }
 }

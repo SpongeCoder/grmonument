@@ -3,6 +3,8 @@
 
     @include below(1023px) {
         margin-top: 0;
+        margin-right: rem(32);
+        margin-left: auto;
     }
 
     &__text {
@@ -28,11 +30,20 @@
         justify-content: center;
         width: rem(200);
         height: rem(37);
-        background-size: 100% 100%;
 
         font-size: rem(16);
         color: #ffffff;
         text-align: center;
+
+        background-size: 100% 100%;
+
+        @include below(1023px) {
+            width: rem(38);
+            overflow: hidden;
+
+            border-radius: rem(6);
+            background-size: auto;
+        }
 
         span {
             display: inline-block;
@@ -49,6 +60,8 @@
             background-image: url('../img/general/whatsapp_img.png');
 
             @include below(1023px) {
+                margin-right: rem(19);
+
                 background-position-x: -3px;
             }
         }
@@ -57,20 +70,13 @@
             background-image: url('../img/general/viber_img.png');
 
             @include below(1023px) {
-                background-color: #7B519D;
+                background-color: #7b519d;
             }
         }
 
         &:hover {
             color: #ffffff;
             text-decoration: underline;
-        }
-
-        @include below(1023px) {
-            overflow: hidden;
-            width: rem(38);
-            border-radius: rem(6);
-            background-size: auto;
         }
     }
 }

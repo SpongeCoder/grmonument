@@ -2,8 +2,15 @@ include ../memorial-block/memorial-block
 
 mixin main-catalog()
     .main-catalog
-        .main-catalog__items
-            each item in memorialBlocks.items
-                +memorial-block(item)
-        .main-catalog__footer
-            a(href=jv0).main-catalog__link Перейти в каталог
+        +wrapp
+            .main-catalog__icon-decor
+                +icon({icon: 'decor-line-grow', iconWidth:'410', iconHeight:'29'})
+            +title('Каталог продукции').main-catalog__title
+
+            p.main-catalog__desc Обеспечение достойных почестей родным людям после их ухода в иной мир – наш долг. Одним из способов поддержания памяти о покойных выступает оформление участка на кладбище. Красивый ритуальный ансамбль выразит любовь и уважение, а также увековечит память о дорогом человеке.
+
+            .main-catalog__items
+                each item in memorialBlocks.items
+                    +memorial-block(item)
+            .main-catalog__footer
+                a(href=jv0).main-catalog__link Перейти в каталог

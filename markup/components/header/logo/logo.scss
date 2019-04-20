@@ -8,8 +8,8 @@
     margin-right: rem(20);
 
     @include below(1023px) {
-        margin-top: 0;
         align-items: center;
+        margin-top: 0;
     }
 
     &:hover {
@@ -37,8 +37,13 @@
 
         @include below(1023px) {
             margin-top: 0;
+
             font-size: rem(26);
             line-height: rem(27);
+        }
+
+        @include below(424px) {
+            display: none;
         }
     }
 }

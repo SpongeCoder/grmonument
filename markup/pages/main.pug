@@ -5,6 +5,7 @@ include ../components/memorial-block/memorial-block
 include ../components/main-catalog/main-catalog
 include ../components/special-offers/special-offers
 include ../components/develop-monument/develop-monument
+include ../components/main-manufacture/main-manufacture
 
 block vars
     -pageSettings.title = 'Главная';
@@ -12,14 +13,7 @@ block vars
 block content
     +wrapp
         +special-offers(memorialBlocksDiscount).special-offers--main
-        +title('Изготовление памятников')
-    +wrapp.wrapp--flex
-        +vertical-main-menu(verticalMainMenu)
-        +develop-monument
 
-    +wrapp
-        +title('Каталог продукции')
+    +main-manufacture
 
-        p(style={width: '89%', margin: '25px auto'}) Обеспечение достойных почестей родным людям после их ухода в иной мир – наш долг. Одним из способов поддержания памяти о покойных выступает оформление участка на кладбище. Красивый ритуальный ансамбль выразит любовь и уважение, а также увековечит память о дорогом человеке.
-
-        +main-catalog
+    +main-catalog

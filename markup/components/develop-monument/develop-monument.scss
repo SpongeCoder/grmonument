@@ -2,13 +2,52 @@
     p {
         width: 92%;
 
+        @include below(1023px) {
+            width: auto;
+        }
+
         &:first-child {
             margin-top: rem(10);
             margin-bottom: rem(24);
+
+            @include below(1023px) {
+                margin-bottom: rem(16);
+            }
+        }
+    }
+
+    &__spoiler-text {
+        @include below(1023px) {
+            display: none;
         }
     }
 
     .our-advantages {
         margin-top: rem(46);
+
+        @include below(1023px) {
+            margin-top: rem(38);
+        }
+    }
+}
+
+.develop-monument-spoiler {
+    display: none;
+    padding: 0;
+    padding-bottom: rem(5);
+
+    font-size: rem(14);
+    font-weight: bold;
+    line-height: rem(14);
+    color: #4d2d0a;
+    letter-spacing: -0.02em;
+
+    border: none;
+    border-bottom: rem(2) dotted #4d2d0a;
+    background: none;
+    outline: none;
+
+    @include below(1023px) {
+        display: inline-block;
     }
 }

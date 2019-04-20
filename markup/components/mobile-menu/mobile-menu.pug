@@ -1,0 +1,25 @@
+mixin mobile-menu(data)
+    .mobile-menu.is-close
+        button.mobile-menu__close
+        ul.mobile-menu__list.mobile-menu__list--main
+            li
+                a.mobile-menu__link(href=jv0) Акции
+            li
+                a.mobile-menu__link(href=jv0) Каталог продукции
+            li
+                a.mobile-menu__link(href=jv0) Наши работы
+            li
+                a.mobile-menu__link(href=jv0) Образцы гранита
+            li
+                a.mobile-menu__link(href=jv0) Гарантия
+            li
+                a.mobile-menu__link(href=jv0) Оптовикам
+            li
+                a.mobile-menu__link(href=jv0) Контакты
+
+        ul.mobile-menu__list.mobile-menu__list--second
+            each item in headerTopMenu.items
+                li
+                    a.mobile-menu__link(href=jv0)= item.text
+
+        a(href="tel:89105554889").mobile-menu__phone 8 (910) 555 48 89

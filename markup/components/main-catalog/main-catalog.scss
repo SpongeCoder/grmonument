@@ -2,12 +2,76 @@
     margin-top: rem(70);
     margin-bottom: rem(20);
 
+    @include below(1023px) {
+        margin-top: rem(15);
+    }
+
+    &__title {
+        @include below(1023px) {
+            display: block;
+            margin-top: rem(30);
+            margin-bottom: rem(10);
+
+            text-align: center;
+        }
+
+        .title__icon {
+            @include below(1023px) {
+                display: none;
+            }
+        }
+
+        .title__name {
+            @include below(1023px) {
+                margin: 0;
+
+                font-size: rem(22);
+                line-height: rem(23);
+            }
+        }
+    }
+
+    &__desc {
+        width: 89%;
+        margin: 25px auto;
+
+        @include below(1023px) {
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: rem(34);
+
+            font-size: rem(14);
+            line-height: rem(20);
+        }
+    }
+
+    &__icon-decor {
+        display: none;
+
+        @include below(1023px) {
+            display: block;
+            margin: 0 rem(28);
+        }
+
+        .icon {
+            fill: none;
+
+            @include below(1023px) {
+                width: 100%;
+            }
+        }
+    }
+
     &__items {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: space-between;
         margin-bottom: rem(30);
+
+        @include below(1023px) {
+            justify-content: space-around;
+        }
 
         .memorial-block {
             margin-bottom: rem(35);
@@ -32,6 +96,12 @@
 
         border-radius: rem(5);
         background-color: #da8836;
+
+        @include below(1023px) {
+            width: rem(230);
+
+            font-size: rem(16);
+        }
 
         &:hover {
             color: #ffffff;

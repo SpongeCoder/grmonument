@@ -3,8 +3,10 @@ include logo/logo
 include header-phone/header-phone
 include header-work-time/header-work-time
 include ../address/address
+include ../mobile-menu/mobile-menu
 
 mixin header()
+    +mobile-menu
     .header
         .header__top
             +wrapp.header__top-wrapp
@@ -16,3 +18,4 @@ mixin header()
                 +logo
                 +header-phone
                 +header-work-time
+                button.header__burger

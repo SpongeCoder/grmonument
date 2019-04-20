@@ -28,11 +28,23 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+
+        @include below(1023px) {
+            display: block;
+
+            text-align: center;
+        }
     }
 
     &__copyright {
         font-size: rem(16);
         color: $color-gray;
+
+        @include below(1023px) {
+            margin-bottom: rem(10);
+
+            font-size: rem(14);
+        }
     }
 
     &__phone {

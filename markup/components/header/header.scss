@@ -37,7 +37,25 @@
 
         @include below(1023px) {
             height: rem(70);
+
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    &__burger {
+        display: none;
+        width: rem(40);
+        height: rem(21);
+
+        border: none;
+        background-color: transparent;
+        background-image: url("../img/minified-svg/burger.svg");
+        background-repeat: no-repeat;
+        background-size: rem(40) rem(21);
+        outline: none;
+
+        @include below(1023px) {
+            display: block;
         }
     }
 

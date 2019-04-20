@@ -32,6 +32,12 @@ body {
     background-size: rem(1920) rem(880);
     background-position: center rem(240);
     background-repeat: no-repeat;
+
+    @include below(1023px) {
+        background-position: 25% rem(60);
+        background-size: auto 60%;
+    }
+
 }
 
 select, input, textarea {
@@ -84,6 +90,11 @@ h6 {
 p {
     margin: 1rem 0;
     line-height: rem(23);
+
+    @include below(1023px) {
+        font-size: rem(14);
+        line-height: normal;
+    }
 }
 
 a {
@@ -109,7 +120,7 @@ a {
     margin-bottom: rem(50);
 
     @include below(1023px) {
-        margin-top: rem(80);
+        margin-top: rem(92);
     }
 }
 
