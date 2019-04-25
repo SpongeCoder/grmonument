@@ -5,7 +5,10 @@ $(function () {
     let $text = $('.develop-monument__spoiler-text');
     $btn.on('click', function (event) {
         event.preventDefault();
-        $text.show(450);
-        $(this).hide();
+        $text.slideDown(450);
+        $(this).prop('disabled', true);
+        $(this).animate({
+            opacity: 0,
+        }, 300);
     });
 })

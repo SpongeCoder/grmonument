@@ -14,6 +14,10 @@
 
     &.is-close {
         transform: translate3d(0, -100%, 0);
+
+        @include below(520px, 'height') {
+            transform: translate3d(0, -200%, 0);
+        }
     }
 
     &__close {

@@ -47,9 +47,6 @@
     }
 
     &__items {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         width: 76.6%;
         margin: 0 auto rem(55) auto;
 
@@ -63,22 +60,8 @@
         }
 
         .memorial-block {
-            margin-right: rem(34);
-
-            @include below(1023px) {
-                margin: 0 auto;
-            }
-
-            &:last-child {
-                margin-right: 0;
-            }
-
-            &:nth-child(2),
-            &:nth-child(3) {
-                @include below(1023px) {
-                    display: none;
-                }
-            }
+            margin: 0 auto;
+            display: block;
         }
     }
 

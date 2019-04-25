@@ -4,7 +4,13 @@ mixin special-offers(data)
     .special-offers&attributes(attributes)
         .special-offers__title Специальные предложения
         .special-offers__items
-            each item in data.items
-                +memorial-block(item)
+            .swiper-container
+                .swiper-wrapper
+                    each item in data.items
+                        .swiper-slide
+                            +memorial-block(item)
+                        .swiper-slide
+                            +memorial-block(item)
+
         .special-offers__icon
             +icon({icon: 'decor-line', iconWidth:'410', iconHeight:'29'})
