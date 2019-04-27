@@ -1,0 +1,26 @@
+.feedback-btn {
+    text-align: center;
+
+    button {
+        background: #DA8836;
+        border-radius: rem(5);
+        padding: rem(12) rem(30);
+        border: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: rem(18);
+        line-height: rem(22);
+
+        @include below(1023px) {
+            padding: rem(12) rem(25);
+
+            font-size: rem(16);
+        }
+
+        &:hover {
+            color: #ffffff;
+
+            background-color: #b47323;
+        }
+    }
+}

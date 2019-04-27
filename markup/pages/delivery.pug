@@ -1,0 +1,26 @@
+extends ../layouts/default
+
+include ../components/vertical-main-menu/vertical-main-menu
+include ../components/memorial-block/memorial-block
+include ../components/catalog/catalog
+include ../components/breadcrumb/breadcrumb
+include ../components/decor-index-block/decor-index-block
+include ../components/delivery/delivery
+include ../components/feedback-btn/feedback-btn
+
+block vars
+    -pageSettings.title = 'Доставка и установка';
+    -
+        breadcrumb = {
+            main: 'Главная',
+            items: ['Доставка и установка'],
+        }
+
+block content
+    .page-catalog
+        +breadcrumb(breadcrumb)
+        +wrapp
+            +title('Доставка и установка')
+
+            +delivery
+            +feedback-btn

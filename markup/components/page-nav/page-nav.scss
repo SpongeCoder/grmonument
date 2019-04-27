@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: flex-start;
     margin-top: rem(10);
+
     font-size: rem(18);
 
     &__left,
@@ -13,21 +14,22 @@
         fill: #4d2d0a;
 
         &.is-disable {
-            fill: #C4C4C4;
+            fill: #c4c4c4;
 
             &:hover {
-                fill: #C4C4C4;
+                fill: #c4c4c4;
             }
         }
 
         &:hover {
-            fill: #B47323;
+            fill: #b47323;
         }
     }
 
     &__left {
         margin-right: rem(25);
-        transform: rotate(180deg)
+
+        transform: rotate(180deg);
     }
 
     &__right {

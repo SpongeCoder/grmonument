@@ -1,0 +1,48 @@
+.delivery {
+    width: 83%;
+    margin: rem(30) auto rem(40) auto;
+
+    @include below(1023px) {
+        width: 100%;
+    }
+}
+
+.delivery-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: rem(35);
+
+    @include below(424px) {
+        display: block;
+
+        .decor-index-block {
+            margin: 0 auto;
+        }
+    }
+
+    &__desc {
+        line-height: rem(19);
+    }
+
+    &__left {
+        margin-right: rem(38);
+
+        @include below(1023px) {
+            margin-right: rem(20);
+        }
+
+        @include below(424px) {
+            margin-right: 0;
+        }
+
+        .icon {
+            fill: #4D2D0A;
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        font-size: rem(18);
+    }
+}

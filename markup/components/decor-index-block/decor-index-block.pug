@@ -1,3 +1,7 @@
 mixin decor-index-block(index)
     .decor-index-block&attributes(attributes)
         span= index
+
+mixin decor-index-block-icon(iconName, iconWidth, iconHeight)
+    .decor-index-block&attributes(attributes)
+        +icon({icon: iconName, iconWidth:iconWidth, iconHeight:iconHeight})
