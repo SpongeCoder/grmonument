@@ -1,12 +1,12 @@
 .vertical-main-menu {
+    width: rem(275);
     margin-top: rem(15);
     margin-right: rem(35);
     margin-bottom: rem(20);
-    width: rem(275);
 
     &__item {
-        margin-bottom: rem(2);
         width: rem(275);
+        margin-bottom: rem(2);
     }
 
     &__head {

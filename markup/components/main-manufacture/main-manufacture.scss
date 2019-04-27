@@ -1,5 +1,6 @@
 .main-manufacture {
     margin-bottom: rem(70);
+
     .vertical-main-menu {
         @include below(1023px) {
             display: none;

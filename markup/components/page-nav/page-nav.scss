@@ -1,65 +1,74 @@
 .page-nav {
-    margin-top: 10px;
-
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: rem(10);
+    font-size: rem(18);
 
     &__left,
     &__right {
-        display: inline-block;
-        padding: 5px 10px;
+        display: block;
+        width: rem(28);
+        height: rem(16);
+        fill: #4d2d0a;
 
-        font-size: 16px;
-        vertical-align: middle;
+        &.is-disable {
+            fill: #C4C4C4;
 
-        border: 1px solid $color-root-gray-light;
-        border-radius: 3px;
-        background-color: $oc-gray-1;
-
-        &.is-hide {
-            display: none;
+            &:hover {
+                fill: #C4C4C4;
+            }
         }
 
         &:hover {
-            color: #fff;
-
-            border-color: $color-root-red-1;
-            background-color: $color-root-red-1;
+            fill: #B47323;
         }
     }
 
     &__left {
-        margin-right: 10px;
+        margin-right: rem(25);
+        transform: rotate(180deg)
     }
 
     &__right {
-        margin-left: 10px;
+        margin-left: rem(25);
     }
 
     &__numbers {
-        display: inline-block;
-
-        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     &__num {
-        display: inline-block;
-        padding: 5px 10px;
-        margin: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(35);
+        height: rem(37);
+        margin: 0 rem(5);
 
-        border: 1px solid $color-root-gray-light;
-        border-radius: 3px;
-        background-color: $oc-gray-1;
+        color: #4d2d0a;
+        text-align: center;
 
         &:hover,
         &.is-current {
             color: #fff;
 
-            border-color: $color-root-red-1;
-            background-color: $color-root-red-1;
+            background-color: #d4872b;
+
+            // border-color: $color-root-red-1;
+            // background-color: $color-root-red-1;
         }
     }
 
-    &__divider {
-        padding: 5px 10px;
+    &__show-all {
+        margin-left: rem(20);
+
+        color: #4d2d0a;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }

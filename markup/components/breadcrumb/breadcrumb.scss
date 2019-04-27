@@ -1,7 +1,7 @@
 .breadcrumb {
     padding: rem(8) rem(0);
-    margin-bottom: rem(32);
     margin-top: rem(17);
+    margin-bottom: rem(32);
 
     font-size: rem(13);
 
@@ -57,8 +57,8 @@
         color: #383838;
 
         &:hover {
-            text-decoration: underline;
             color: #383838;
+            text-decoration: underline;
         }
     }
 }

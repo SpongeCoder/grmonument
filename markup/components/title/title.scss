@@ -10,6 +10,7 @@
 
     @include below(1023px) {
         display: block;
+
         text-align: center;
     }
 
@@ -93,6 +94,7 @@
 
         @include below(1023px) {
             margin: 0;
+
             font-size: rem(22);
             line-height: rem(23);
         }

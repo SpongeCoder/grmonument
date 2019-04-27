@@ -4,21 +4,22 @@ include ../components/vertical-main-menu/vertical-main-menu
 include ../components/memorial-block/memorial-block
 include ../components/catalog/catalog
 include ../components/breadcrumb/breadcrumb
+include ../components/page-nav/page-nav
 
 block vars
     -verticalMainMenu.data[0].index = 0;
-    -pageSettings.title = 'Каталог продукции';
+    -pageSettings.title = 'Комплексы';
     -
         breadcrumb = {
             main: 'Главная',
-            items: ['Каталог продукции'],
+            items: ['Каталог продукции', 'Комплексы'],
         }
 
 block content
     .page-catalog
         +breadcrumb(breadcrumb)
         +wrapp
-            +title('Каталог продукции')
+            +title('Комплексы')
         +wrapp.wrapp--flex
             +vertical-main-menu(verticalMainMenu)
-            +catalog()
+            +catalog-list()

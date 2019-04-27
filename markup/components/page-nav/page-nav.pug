@@ -1,14 +1,10 @@
 mixin page-nav()
     .page-nav
-        SPAN.page-nav__left.is-hide
-            +fa-icon('angle-left')
+        SPAN.page-nav__left.is-disable
+            +icon({icon: 'arrow', iconWidth:'28', iconHeight:'16'})
         .page-nav__numbers
             SPAN.page-nav__num.is-current 1
             A.page-nav__num(href=jv0) 2
-            A.page-nav__num(href=jv0) 3
-            A.page-nav__num(href=jv0) 4
-            A.page-nav__num(href=jv0) 5
-            SPAN.page-nav__divider ...
-            A.page-nav__num(href=jv0) 255
+            A.page-nav__show-all(href=jv0) Показать все
         A.page-nav__right(href=jv0)
-            +fa-icon('angle-right')
+            +icon({icon: 'arrow', iconWidth:'28', iconHeight:'16'})

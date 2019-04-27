@@ -9,3 +9,10 @@ mixin catalog()
                 +memorial-block(item).memorial-block--category
         .catalog__footer
 
+mixin catalog-list()
+    .catalog
+        .catalog__items
+            each item in memorialBlocks.items
+                +memorial-block(item)
+        .catalog__footer
+            +page-nav
