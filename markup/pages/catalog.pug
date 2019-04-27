@@ -1,0 +1,27 @@
+extends ../layouts/default
+
+include ../components/vertical-main-menu/vertical-main-menu
+include ../components/memorial-block/memorial-block
+include ../components/catalog/catalog
+include ../components/special-offers/special-offers
+include ../components/develop-monument/develop-monument
+include ../components/main-manufacture/main-manufacture
+include ../components/breadcrumb/breadcrumb
+
+block vars
+    -verticalMainMenu.data[0].index = 0;
+    -pageSettings.title = 'Каталог продукции';
+    -
+        breadcrumb = {
+            main: 'Главная',
+            items: ['Каталог продукции'],
+        }
+
+block content
+    .page-catalog
+        +breadcrumb(breadcrumb)
+        +wrapp
+            +title('Каталог продукции')
+        +wrapp.wrapp--flex
+            +vertical-main-menu(verticalMainMenu)
+            +catalog()

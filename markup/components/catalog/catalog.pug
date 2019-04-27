@@ -1,0 +1,11 @@
+include ../memorial-block/memorial-block
+
+mixin catalog()
+    .catalog
+        p.catalog__desc Обеспечение достойных почестей родным людям после их ухода в иной мир – наш долг. Одним из способов поддержания памяти о покойных выступает оформление участка на кладбище. Красивый ритуальный ансамбль выразит любовь и уважение, а также увековечит память о дорогом человеке.
+
+        .catalog__items
+            each item in memorialBlocksCategory.items
+                +memorial-block(item).memorial-block--category
+        .catalog__footer
+

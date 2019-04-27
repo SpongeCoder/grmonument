@@ -1,4 +1,4 @@
-.main-catalog {
+.catalog {
     margin-bottom: rem(20);
 
     @include below(1023px) {
@@ -31,8 +31,7 @@
     }
 
     &__desc {
-        width: 89%;
-        margin: 25px auto;
+        margin-bottom: rem(40);
 
         @include below(1023px) {
             width: 100%;

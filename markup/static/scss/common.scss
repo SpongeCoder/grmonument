@@ -138,3 +138,20 @@ a {
         left:0;
     }
 }
+
+.page-catalog {
+    .wrapp--flex {
+        @include below(1023px) {
+            display: block;
+        }
+    }
+
+    .vertical-main-menu {
+        margin-top: 0;
+
+        @include below(1023px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

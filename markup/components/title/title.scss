@@ -8,6 +8,11 @@
     margin-top: rem(20);
     margin-bottom: rem(20);
 
+    @include below(1023px) {
+        display: block;
+        text-align: center;
+    }
+
     &__icon {
         position: relative;
 
@@ -15,6 +20,10 @@
         height: 2px;
 
         background-color: #da8836;
+
+        @include below(1023px) {
+            display: none;
+        }
 
         &::before {
             content: '';
@@ -81,5 +90,11 @@
         line-height: rem(30);
         color: $color-grow;
         letter-spacing: -0.02em;
+
+        @include below(1023px) {
+            margin: 0;
+            font-size: rem(22);
+            line-height: rem(23);
+        }
     }
 }

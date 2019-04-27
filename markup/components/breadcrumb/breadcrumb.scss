@@ -1,10 +1,13 @@
 .breadcrumb {
-    padding: 8px 0px;
-    margin-bottom: 20px;
+    padding: rem(8) rem(0);
+    margin-bottom: rem(32);
+    margin-top: rem(17);
 
-    font-size: 13px;
+    font-size: rem(13);
 
-    border-bottom: 1px $color-root-gray-light solid;
+    @include below(1023px) {
+        display: none;
+    }
 
     &__list {
         padding: 0;
@@ -21,7 +24,7 @@
         margin: 0 .3em;
 
         &::before {
-            content: '»';
+            content: '>';
 
             position: absolute;
             top: 0;
@@ -37,8 +40,7 @@
             }
 
             .breadcrumb__link {
-                color: $color-root-gray-light-2;
-                text-shadow: none;
+                color: #878787;
 
                 &:hover {
                     text-decoration: none;
@@ -52,10 +54,11 @@
     }
 
     &__link {
-        color: $color-root-gray-light-1;
+        color: #383838;
 
         &:hover {
             text-decoration: underline;
+            color: #383838;
         }
     }
 }
