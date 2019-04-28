@@ -9,8 +9,8 @@
 
 .delivery-item {
     display: flex;
-    justify-content: flex-start;
     align-items: flex-start;
+    justify-content: flex-start;
     margin-bottom: rem(35);
 
     @include below(424px) {
@@ -37,12 +37,13 @@
         }
 
         .icon {
-            fill: #4D2D0A;
+            fill: #4d2d0a;
         }
     }
 
     &__title {
         margin-top: 0;
+
         font-size: rem(18);
     }
 }

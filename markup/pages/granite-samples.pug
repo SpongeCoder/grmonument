@@ -1,0 +1,22 @@
+extends ../layouts/default
+
+include ../components/memorial-block/memorial-block
+include ../components/breadcrumb/breadcrumb
+include ../components/feedback-btn/feedback-btn
+include ../components/granite-samples/granite-samples
+
+block vars
+    -pageSettings.title = 'Образцы гранита';
+    -
+        breadcrumb = {
+            main: 'Главная',
+            items: ['Образцы гранита'],
+        }
+
+block content
+    .page-catalog
+        +breadcrumb(breadcrumb)
+        +wrapp
+            +title('Образцы гранита')
+            +granite-samples
+            +feedback-btn

@@ -1,0 +1,38 @@
+.granite-samples {
+    &__desc {
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+
+        list-style-type: none;
+    }
+
+    &__item {
+    }
+}
+
+.granite-samples-item {
+    &__photo {
+        width: rem(143);
+        height: rem(143);
+        overflow: hidden;
+
+        border-radius: 50%;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__name {
+        font-size: rem(18);
+        color: #4d2d0a;
+        text-align: center;
+        letter-spacing: -0.02em;
+    }
+}

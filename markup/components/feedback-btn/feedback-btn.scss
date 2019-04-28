@@ -2,14 +2,16 @@
     text-align: center;
 
     button {
-        background: #DA8836;
-        border-radius: rem(5);
         padding: rem(12) rem(30);
-        border: none;
-        color: #ffffff;
-        text-transform: uppercase;
+
         font-size: rem(18);
         line-height: rem(22);
+        color: #ffffff;
+        text-transform: uppercase;
+
+        border: none;
+        border-radius: rem(5);
+        background: #da8836;
 
         @include below(1023px) {
             padding: rem(12) rem(25);
