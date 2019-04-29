@@ -16,6 +16,7 @@ import 'components/header/header.js';
 import 'components/mobile-menu/mobile-menu.js';
 import 'components/develop-monument/develop-monument.js';
 import 'components/special-offers/special-offers.js';
+import 'components/feedback-btn/feedback-btn.js';
 
 svg4everybody();
 

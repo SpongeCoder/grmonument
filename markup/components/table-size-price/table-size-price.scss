@@ -2,20 +2,22 @@
     width: 100%;
 
     tr {
-
     }
 
     th {
-        background-color: #fff;
+        padding: rem(12) rem(27);
+
         font-size: rem(18);
         line-height: rem(18);
-        letter-spacing: -0.02em;
-        color: #4D2D0A;
+        color: #4d2d0a;
         text-align: left;
-        padding: rem(12) rem(27);
+        letter-spacing: -0.02em;
+
+        background-color: #fff;
 
         @include below(1023px) {
             padding: rem(15) rem(15);
+
             font-size: rem(16);
             line-height: rem(16);
         }
@@ -35,9 +37,11 @@
 
     td {
         padding: rem(15) rem(27);
-        color: #383838;
+
         font-size: rem(16);
-        border-bottom: 2px solid #C4C4C4;
+        color: #383838;
+
+        border-bottom: 2px solid #c4c4c4;
 
         @include below(1023px) {
             padding: rem(15) rem(15);

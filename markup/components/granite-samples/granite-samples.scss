@@ -30,7 +30,6 @@
             width: 100%;
             margin: 0;
         }
-
     }
 
     &__item {
@@ -43,7 +42,6 @@
     @include below(1023px) {
         margin: 0 auto rem(30) auto;
     }
-
 
     &__photo {
         width: rem(143);

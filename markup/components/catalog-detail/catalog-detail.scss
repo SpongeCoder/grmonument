@@ -8,8 +8,8 @@
 
     &__content {
         display: flex;
-        justify-content: flex-start;
         align-items: flex-start;
+        justify-content: flex-start;
 
         @include below(1023px) {
             display: block;
@@ -17,19 +17,25 @@
     }
 
     &__photo {
-        background: #FFFFFF;
-        border: 1px solid #EBCCAD;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
         width: rem(415);
         height: rem(415);
-        flex: 0 0 auto;
         margin-right: rem(70);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        border: 1px solid #ebccad;
+        background: #ffffff;
+
+        @include below(1023px) {
+            width: rem(278);
+            height: rem(278);
+            margin: 0 auto;
+        }
 
         img {
             display: block;
-
             max-width: 88%;
             max-height: 88%;
 
@@ -37,12 +43,6 @@
                 max-width: 79%;
                 max-height: 80%;
             }
-        }
-
-        @include below(1023px) {
-            margin: 0 auto;
-            width: rem(278);
-            height: rem(278);
         }
     }
 
@@ -56,29 +56,31 @@
 
     &__title {
         margin-top: 0;
+        margin-bottom: rem(-30);
+        margin-left: rem(487);
+
         font-family: 'PT Serif';
-        font-style: normal;
-        font-weight: bold;
         font-size: rem(28);
+        font-weight: bold;
+        font-style: normal;
         line-height: rem(30);
         letter-spacing: -0.02em;
 
-        margin-left: rem(487);
-        margin-bottom: rem(-30);
-
         @include below(1023px) {
-            margin-left: 0;
             margin-bottom: rem(16);
-            text-align: center;
+            margin-left: 0;
+
             font-size: rem(22);
             line-height: rem(23);
+            text-align: center;
         }
     }
 
     &__desc {
+        margin-top: rem(58);
+
         font-size: rem(16);
         line-height: rem(19);
-        margin-top: rem(58);
 
         @include below(1023px) {
             margin-top: rem(20);
@@ -86,8 +88,8 @@
     }
 
     &__table {
-        margin-bottom: rem(46);
         margin-top: rem(27);
+        margin-bottom: rem(46);
     }
 
     .feedback-btn {

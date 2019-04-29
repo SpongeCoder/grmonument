@@ -1,13 +1,13 @@
 .price-options {
-
     &__list {
         display: flex;
-        justify-content: space-around;
         align-items: flex-start;
-        list-style-type: none;
-        padding: 0;
+        justify-content: space-around;
         width: 90%;
+        padding: 0;
         margin: 0 auto;
+
+        list-style-type: none;
 
         @include below(1023px) {
             display: block;
@@ -17,6 +17,7 @@
 
     &__item {
         width: rem(340);
+
         font-size: rem(16);
         line-height: rem(19);
 
@@ -29,6 +30,6 @@
     &__title {
         font-size: rem(18);
         line-height: rem(18);
-        color: #4D2D0A;
+        color: #4d2d0a;
     }
 }
