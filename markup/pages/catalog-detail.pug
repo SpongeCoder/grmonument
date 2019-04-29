@@ -1,0 +1,22 @@
+extends ../layouts/default
+
+include ../components/breadcrumb/breadcrumb
+include ../components/decor-index-block/decor-index-block
+include ../components/feedback-btn/feedback-btn
+include ../components/catalog-detail/catalog-detail
+include ../components/price-options/price-options
+include ../components/table-size-price/table-size-price
+
+block vars
+    -pageSettings.title = 'Памятник на могилу GP14';
+    -
+        breadcrumb = {
+            main: 'Главная',
+            items: ['Каталог продукции', 'Памятники', 'Памятник на могилу GP14'],
+        }
+
+block content
+    +breadcrumb(breadcrumb)
+    +wrapp
+        +catalog-detail
+        +price-options

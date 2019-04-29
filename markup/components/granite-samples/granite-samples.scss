@@ -8,6 +8,10 @@
         font-size: rem(16);
         line-height: rem(19);
         text-align: center;
+
+        @include below(1023px) {
+            margin-bottom: rem(30);
+        }
     }
 
     &__list {
@@ -20,6 +24,13 @@
         margin: 0 auto rem(20) auto;
 
         list-style-type: none;
+
+        @include below(1023px) {
+            display: block;
+            width: 100%;
+            margin: 0;
+        }
+
     }
 
     &__item {
@@ -28,6 +39,11 @@
 
 .granite-samples-item {
     width: rem(175);
+
+    @include below(1023px) {
+        margin: 0 auto rem(30) auto;
+    }
+
 
     &__photo {
         width: rem(143);
