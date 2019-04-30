@@ -14,8 +14,8 @@ mixin feedback-modal(data)
                 input(type="tel" name="phone"  required placeholder="Телефон")
                 textarea(name="text" required placeholder="Комментарий")
 
-                label
-                    input(type="checkbox" name="consent" required value="1")
+                input(type="checkbox" name="consent" id="consent-check" required value="1")
+                label(for="consent-check").feedback-modal__form-consent
                     | Согласие на обработку персональных данных
 
                 .feedback-modal__form-footer

@@ -13,6 +13,8 @@
         border-radius: rem(5);
         background: #da8836;
 
+        transition: background 0.3s;
+
         @include below(1023px) {
             padding: rem(12) rem(25);
 
