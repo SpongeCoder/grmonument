@@ -21,7 +21,12 @@ let preLoaders = [
 let loaders = [{
     test: /\.json$/,
     loader: 'json'
-}];
+},
+{
+    test: require.resolve('jquery'),
+    loader: 'expose?jQuery!expose?$'
+}
+];
 let plugins = [
     new webpack.DefinePlugin({
         'process.env': {

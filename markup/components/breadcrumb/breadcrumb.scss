@@ -16,7 +16,7 @@
         list-style-type: none;
     }
 
-    &__item {
+    li {
         position: relative;
 
         display: inline-block;
@@ -35,16 +35,10 @@
         }
 
         &:last-child {
+            color: #878787;
+
             &::before {
                 content: none;
-            }
-
-            .breadcrumb__link {
-                color: #878787;
-
-                &:hover {
-                    text-decoration: none;
-                }
             }
         }
 
@@ -53,7 +47,7 @@
         }
     }
 
-    &__link {
+    a {
         color: #383838;
 
         &:hover {

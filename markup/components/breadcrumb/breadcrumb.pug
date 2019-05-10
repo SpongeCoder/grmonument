@@ -2,12 +2,12 @@ mixin breadcrumb(data)
     +b.NAV.breadcrumb&attributes(attributes)
         +wrapp
             +e.UL.list
-                +e.LI.item
-                    +e.link(href="/")= data.main
+                +e.LI
+                    +e(href="/")= data.main
                 each item, ind in data.items
                     - var isLast = (ind === data.items.length - 1)
-                    +e.LI.item
+                    +e.LI
                         if isLast
-                            +e.SPAN.link= item
+                            +e.SPAN= item
                         else
-                            +e.link(href=jv0)= item
+                            +e(href=jv0)= item

@@ -24,31 +24,32 @@
     &__list {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
         width: 100%;
-    }
 
-    &__link {
-        display: inline-block;
-        // margin-left: 30px;
+        a {
+            display: inline-block;
+            flex: 0 0 auto;
+            margin-right: 3%;
 
-        font-size: rem(16);
-        font-weight: 600;
-        line-height: rem(16);
-        color: $color-link-text;
-        letter-spacing: rem(2.4);
-        text-transform: uppercase;
+            font-size: rem(16);
+            font-weight: 600;
+            line-height: rem(16);
+            color: $color-link-text;
+            letter-spacing: rem(2.4);
+            text-transform: uppercase;
 
-        &:first-child {
-            // margin-left: rem(15);
-        }
+            &:last-child {
+                margin-right: 0;
+            }
 
-        &:hover {
-            color: #b47323;
-        }
+            &:hover {
+                color: #b47323;
+            }
 
-        &.is-active {
-            color: #b47323;
+            &.is-active {
+                color: #b47323;
+            }
         }
     }
 }

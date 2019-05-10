@@ -97,6 +97,7 @@
                 transition: opacity 0.3s;
             }
 
+            &.is-active,
             &:hover {
                 color: #da8836;
                 text-decoration: none;

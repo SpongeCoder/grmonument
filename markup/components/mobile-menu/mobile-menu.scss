@@ -57,12 +57,18 @@
                 margin-bottom: rem(7);
             }
         }
-    }
 
-    &__link {
-        font-size: rem(16);
-        color: #ebccad;
-        letter-spacing: 0.02em;
+        li {
+            &.is-active {
+                text-decoration: underline;
+            }
+        }
+
+        a {
+            font-size: rem(16);
+            color: #ebccad;
+            letter-spacing: 0.02em;
+        }
     }
 
     &__phone {

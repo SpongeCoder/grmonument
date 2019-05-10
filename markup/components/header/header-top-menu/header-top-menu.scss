@@ -15,12 +15,17 @@
 
         display: inline-block;
         margin-right: rem(24);
-    }
 
-    &__link {
-        font-size: rem(16);
-        color: $color-link-text;
-        letter-spacing: 0.02em;
+        a {
+            font-size: rem(16);
+            color: $color-link-text;
+            letter-spacing: 0.02em;
+
+            &:hover,
+            &.is-active {
+                color: #b47323;
+            }
+        }
     }
 }
 

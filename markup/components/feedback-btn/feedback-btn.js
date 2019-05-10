@@ -17,4 +17,8 @@ $(function () {
     $feedbackBtn.on('click', onOpenModal);
     $feedbackModalClose.on('click', onCloseModal);
     $feedbackModalOverlay.on('click', onCloseModal);
+
+    $(document).on('af_complete', function (event, response) {
+        $feedbackModal.fadeOut(300)
+    });
 })

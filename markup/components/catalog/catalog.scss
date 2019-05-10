@@ -1,4 +1,5 @@
 .catalog {
+    width: 100%;
     margin-bottom: rem(20);
 
     @include below(1023px) {
@@ -64,15 +65,22 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: flex-start;
         margin-bottom: rem(30);
 
         @include below(1023px) {
-            justify-content: space-around;
+            display: block;
         }
 
         .memorial-block {
+            display: block;
+            margin-right: 1%;
             margin-bottom: rem(35);
+            margin-left: 1%;
+            @include below(1023px) {
+                margin-right: auto;
+                margin-left: auto;
+            }
         }
     }
 
