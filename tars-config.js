@@ -13,48 +13,20 @@ module.exports = {
         "workflow": "manual"
     },
     "js": {
-        // concat, modular
-        workflow: 'modular',
-
-        // Only webpack is available right now
-        bundler: 'webpack',
-
-        /**
-         * Use linting of js-files
-         * @type {Boolean}
-         */
-        lint: true,
-
-        /**
-         * Use babel for ES6(ES7-ESNext) syntax support
-         * @type {Boolean}
-         */
-        useBabel: true,
-
-        /**
-         * Remove console.log and debugger from js code in release mode
-         * @type {Boolean}
-         */
-        removeConsoleLog: true,
-
-        // Special config for webpack
-        webpack: {
-            useHMR: false,
-
-            /**
-             * Automatically loaded modules.
-             * Module (value) is loaded when the identifier (key) is used as free variable in a module.
-             * The identifier is filled with the exports of the loaded module.
-             * Example: {$: "jquery"} or {React: 'react'}
-             * @type {Object}
-             */
-            providePlugin: {
-                'jQuery': 'jquery',
-                'window.jQuery': 'jquery',
-                'jquery': 'jquery',
-                'window.jquery': 'jquery',
-                '$': 'jquery',
-                'window.$': 'jquery'
+        "workflow": "modular",
+        "bundler": "webpack",
+        "lint": true,
+        "useBabel": true,
+        "removeConsoleLog": true,
+        "webpack": {
+            "useHMR": false,
+            "providePlugin": {
+                "jQuery": "jquery",
+                "window.jQuery": "jquery",
+                "jquery": "jquery",
+                "window.jquery": "jquery",
+                "$": "jquery",
+                "window.$": "jquery"
             }
         },
         "jsPathsToConcatBeforeModulesJs": [],
@@ -94,5 +66,6 @@ module.exports = {
         "imagesFolderName": "img",
         "componentsFolderName": "components"
     },
+    "devPath": "./dev/",
     "staticPrefix": "static/"
 };

@@ -6,10 +6,6 @@
 
 import svg4everybody from 'static/js/plugins/svg4everybody.min.js';
 window.$ = window.jQuery = require("jquery");
-// import 'swiper';
-// import 'slick-carousel';
-// import 'bootstrap-slider';
-// import 'validate.js';
 
 import 'components/vertical-main-menu/vertical-main-menu.js';
 import 'components/header/header.js';
