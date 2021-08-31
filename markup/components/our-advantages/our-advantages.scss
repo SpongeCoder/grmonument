@@ -4,7 +4,7 @@
 
         font-size: rem(24);
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin-bottom: rem(26);
 
             font-size: rem(18);
@@ -21,14 +21,14 @@
         justify-content: flex-start;
         margin-bottom: rem(32);
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin-bottom: rem(4);
         }
     }
 
     &__item-left {
         margin-right: rem(25);
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin-right: rem(12);
         }
     }
@@ -41,7 +41,7 @@
 
         font-size: rem(18);
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin-bottom: 10px;
 
             font-size: rem(14);
@@ -51,7 +51,7 @@
     &__desc {
         font-size: rem(16);
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             width: 98% !important;
             margin-top: 10px;
 
@@ -60,7 +60,7 @@
     }
 
     &__decor-block {
-        @include below(1023px) {
+        @include below($screen-xl) {
             width: rem(55);
             height: rem(45);
 
@@ -68,7 +68,7 @@
         }
 
         span {
-            @include below(1023px) {
+            @include below($screen-xl) {
                 font-size: rem(16.5);
             }
         }

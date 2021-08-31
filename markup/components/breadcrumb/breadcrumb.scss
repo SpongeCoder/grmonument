@@ -5,7 +5,7 @@
 
     font-size: rem(13);
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         display: none;
     }
 

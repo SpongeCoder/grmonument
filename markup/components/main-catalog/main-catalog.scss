@@ -1,12 +1,12 @@
 .main-catalog {
     margin-bottom: rem(20);
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         margin-top: rem(15);
     }
 
     &__title {
-        @include below(1023px) {
+        @include below($screen-xl) {
             display: block;
             margin-top: rem(30);
             margin-bottom: rem(10);
@@ -15,13 +15,13 @@
         }
 
         .title__icon {
-            @include below(1023px) {
+            @include below($screen-xl) {
                 display: none;
             }
         }
 
         .title__name {
-            @include below(1023px) {
+            @include below($screen-xl) {
                 margin: 0;
 
                 font-size: rem(22);
@@ -34,7 +34,7 @@
         width: 89%;
         margin: 25px auto;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             width: 100%;
             margin-top: 0;
             margin-bottom: rem(34);
@@ -47,7 +47,7 @@
     &__icon-decor {
         display: none;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             display: block;
             margin: 0 rem(28);
         }
@@ -55,7 +55,7 @@
         .icon {
             fill: none;
 
-            @include below(1023px) {
+            @include below($screen-xl) {
                 width: 100%;
             }
         }
@@ -68,7 +68,7 @@
         justify-content: flex-start;
         margin-bottom: rem(30);
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             display: block;
         }
 
@@ -78,7 +78,7 @@
             margin-bottom: rem(35);
             margin-left: 1%;
 
-            @include below(1023px) {
+            @include below($screen-xl) {
                 margin-right: auto;
                 margin-left: auto;
             }
@@ -104,7 +104,7 @@
         border-radius: rem(5);
         background-color: #da8836;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             width: rem(230);
 
             font-size: rem(16);

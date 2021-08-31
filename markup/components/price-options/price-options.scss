@@ -9,7 +9,7 @@
 
         list-style-type: none;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             display: block;
             width: 100%;
         }
@@ -21,7 +21,7 @@
         font-size: rem(16);
         line-height: rem(19);
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             width: rem(280);
             margin: 0 auto;
         }

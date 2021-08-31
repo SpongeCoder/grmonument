@@ -2,7 +2,7 @@
     p {
         width: 92%;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             width: auto;
         }
 
@@ -10,14 +10,14 @@
             margin-top: rem(10);
             margin-bottom: rem(24);
 
-            @include below(1023px) {
+            @include below($screen-xl) {
                 margin-bottom: rem(16);
             }
         }
     }
 
     &__spoiler-text {
-        @include below(1023px) {
+        @include below($screen-xl) {
             display: none;
         }
     }
@@ -25,7 +25,7 @@
     .our-advantages {
         margin-top: rem(46);
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin-top: rem(38);
         }
     }
@@ -47,7 +47,7 @@
     background: none;
     outline: none;
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         display: inline-block;
     }
 }

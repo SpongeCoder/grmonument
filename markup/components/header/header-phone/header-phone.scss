@@ -1,7 +1,7 @@
 .header-phone {
     margin-top: rem(23);
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         margin-top: 0;
         margin-right: rem(32);
         margin-left: auto;
@@ -14,7 +14,7 @@
         font-weight: bold;
         color: #4d2d0a;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             display: none;
         }
     }
@@ -37,7 +37,7 @@
 
         background-size: 100% 100%;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             width: rem(38);
             overflow: hidden;
 
@@ -49,7 +49,7 @@
             display: inline-block;
             margin-left: rem(22);
 
-            @include below(1023px) {
+            @include below($screen-xl) {
                 display: none;
             }
         }
@@ -59,7 +59,7 @@
 
             background-image: url('../img/general/whatsapp_img.png');
 
-            @include below(1023px) {
+            @include below($screen-xl) {
                 margin-right: rem(19);
 
                 background-position-x: -3px;
@@ -69,7 +69,7 @@
         &--viber {
             background-image: url('../img/general/viber_img.png');
 
-            @include below(1023px) {
+            @include below($screen-xl) {
                 background-color: #7b519d;
             }
         }

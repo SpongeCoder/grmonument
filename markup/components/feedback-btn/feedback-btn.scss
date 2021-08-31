@@ -15,7 +15,7 @@
 
         transition: background 0.3s;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             padding: rem(12) rem(25);
 
             font-size: rem(16);

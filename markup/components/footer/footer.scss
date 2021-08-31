@@ -29,7 +29,7 @@
         align-items: flex-start;
         justify-content: space-between;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             display: block;
 
             text-align: center;
@@ -40,7 +40,7 @@
         font-size: rem(16);
         color: $color-gray;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin-bottom: rem(10);
 
             font-size: rem(14);

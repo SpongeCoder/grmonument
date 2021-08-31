@@ -2,7 +2,7 @@
     width: 83%;
     margin: rem(30) auto rem(40) auto;
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         width: 100%;
     }
 }
@@ -28,7 +28,7 @@
     &__left {
         margin-right: rem(38);
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin-right: rem(20);
         }
 

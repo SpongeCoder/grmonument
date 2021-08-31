@@ -17,7 +17,7 @@
 
         background-color: #fff;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             padding: rem(15) rem(15);
 
             font-size: rem(16);
@@ -27,7 +27,7 @@
         &:first-child {
             width: rem(215);
 
-            @include below(1023px) {
+            @include below($screen-xl) {
                 width: auto;
             }
         }
@@ -45,7 +45,7 @@
 
         border-bottom: 2px solid #c4c4c4;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             padding: rem(15) rem(15);
         }
 
@@ -57,7 +57,7 @@
             line-height: rem(21);
             letter-spacing: -0.02em;
 
-            @include below(1023px) {
+            @include below($screen-xl) {
                 font-size: rem(18);
             }
         }

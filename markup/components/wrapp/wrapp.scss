@@ -3,7 +3,7 @@
     max-width: $max-width;
     margin: 0 auto;
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         width: 88%;
     }
 

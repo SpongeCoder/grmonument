@@ -9,7 +9,7 @@
         line-height: rem(19);
         text-align: center;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin-bottom: rem(30);
         }
     }
@@ -25,7 +25,7 @@
 
         list-style-type: none;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             display: block;
             width: 100%;
             margin: 0;
@@ -39,7 +39,7 @@
 .granite-samples-item {
     width: rem(175);
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         margin: 0 auto rem(30) auto;
     }
 

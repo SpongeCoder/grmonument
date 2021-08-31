@@ -2,13 +2,13 @@
     margin-bottom: rem(70);
 
     .vertical-main-menu {
-        @include below(1023px) {
+        @include below($screen-xl) {
             display: none;
         }
     }
 
     .title {
-        @include below(1023px) {
+        @include below($screen-xl) {
             display: block;
             margin-bottom: 0;
 
@@ -16,13 +16,13 @@
         }
 
         &__icon {
-            @include below(1023px) {
+            @include below($screen-xl) {
                 display: none;
             }
         }
 
         &__name {
-            @include below(1023px) {
+            @include below($screen-xl) {
                 margin: 0;
                 margin-top: rem(18);
 

@@ -6,7 +6,7 @@
 
     text-decoration: none;
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         width: rem(233);
     }
 
@@ -33,7 +33,7 @@
 
             font-size: rem(24);
 
-            @include below(1023px) {
+            @include below($screen-xl) {
                 font-size: rem(20);
             }
         }
@@ -50,7 +50,7 @@
         border-left: 1px solid #ebccad;
         background-color: #fff;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             height: rem(203);
         }
 
@@ -82,7 +82,7 @@
 
         background-color: #fbf7f3;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             padding: rem(20) rem(21);
         }
     }
@@ -95,7 +95,7 @@
         color: $color-grow;
         letter-spacing: -0.02em;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin-bottom: rem(10);
 
             font-size: rem(14);
@@ -114,7 +114,7 @@
             font-size: rem(20);
         }
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             font-size: rem(18);
             letter-spacing: -0.02em;
         }

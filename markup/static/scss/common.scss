@@ -14,7 +14,7 @@ html {
         font-size: 14px;
     }
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         font-size: $font-size;
     }
 }
@@ -33,7 +33,7 @@ body {
     background-position: center rem(240);
     background-repeat: no-repeat;
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         background-position: 25% rem(60);
         background-size: auto 60%;
     }
@@ -91,7 +91,7 @@ p {
     margin: 1rem 0;
     line-height: rem(23);
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         font-size: rem(14);
         line-height: normal;
     }
@@ -119,7 +119,7 @@ a {
     margin-top: rem(256);
     margin-bottom: rem(50);
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         margin-top: rem(92);
     }
 }
@@ -141,7 +141,7 @@ a {
 
 .page-catalog {
     .wrapp--flex {
-        @include below(1023px) {
+        @include below($screen-xl) {
             display: block;
         }
     }
@@ -149,7 +149,7 @@ a {
     .vertical-main-menu {
         margin-top: 0;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin-left: auto;
             margin-right: auto;
         }

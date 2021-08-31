@@ -7,7 +7,7 @@
     margin-top: rem(5);
     margin-right: rem(20);
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         align-items: center;
         margin-top: 0;
     }
@@ -20,7 +20,7 @@
         display: block;
         width: rem(77);
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             width: rem(37);
         }
     }
@@ -35,7 +35,7 @@
         line-height: rem(35);
         color: $color-grow;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin-top: 0;
 
             font-size: rem(26);

@@ -26,7 +26,7 @@
         text-align: center;
         letter-spacing: -0.02em;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin-top: 0;
 
             font-size: rem(20);
@@ -49,7 +49,7 @@
         box-shadow: 0px rem(4) rem(30) rgba(0, 0, 0, 0.1);
         transform: translateX(-50%);
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             width: 95%;
             max-width: rem(584);
             height: auto;
@@ -194,7 +194,7 @@
 
             transition: background 0.3s;
 
-            @include below(1023px) {
+            @include below($screen-xl) {
                 font-size: rem(16);
             }
 

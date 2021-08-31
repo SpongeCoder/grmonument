@@ -7,7 +7,7 @@
     border-radius: 5px;
     background: rgba(77, 45, 10, 0.7);
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         height: rem(453);
         padding-top: rem(30);
     }
@@ -21,7 +21,7 @@
             margin-bottom: rem(50);
         }
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             padding-top: rem(29);
             padding-right: rem(25);
             padding-left: rem(24);
@@ -38,7 +38,7 @@
         color: #ffffff;
         text-align: center;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin-bottom: rem(20);
 
             font-size: rem(24);
@@ -54,7 +54,7 @@
             width: 80%;
         }
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             width: 100%;
             margin-bottom: rem(15);
         }
@@ -71,7 +71,7 @@
         .icon {
             fill: none;
 
-            @include below(1023px) {
+            @include below($screen-xl) {
                 width: 100%;
             }
         }

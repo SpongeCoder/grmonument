@@ -3,7 +3,7 @@
 
     text-align: right;
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         display: none;
     }
 

@@ -8,7 +8,7 @@
     margin-top: rem(20);
     margin-bottom: rem(20);
 
-    @include below(1023px) {
+    @include below($screen-xl) {
         display: block;
 
         text-align: center;
@@ -30,7 +30,7 @@
 
         background-color: #da8836;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             display: none;
         }
 
@@ -100,7 +100,7 @@
         color: $color-grow;
         letter-spacing: -0.02em;
 
-        @include below(1023px) {
+        @include below($screen-xl) {
             margin: 0;
 
             font-size: rem(22);
