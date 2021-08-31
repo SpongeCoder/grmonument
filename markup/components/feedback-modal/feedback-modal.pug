@@ -1,12 +1,11 @@
+include ../close-btn/close-btn
+
 mixin feedback-modal(data)
     .feedback-modal
         .feedback-modal__overlay
 
-
         .feedback-modal__content
-            //- TODO: заменить на блок
-            button(type="button" title="Закрыть").feedback-modal__close
-                +icon({icon: 'close', iconWidth:'30px', iconHeight:'30px'})
+            +close-btn({width: '20px', height: '20px'})
 
             .feedback-modal__title Заказать или задать вопрос
 

@@ -1,10 +1,11 @@
-let $ = require('jquery');
+import $ from 'jquery';
 
 $(function () {
     let $feedbackBtn = $('.feedback-btn button');
     let $feedbackModal = $('.feedback-modal');
-    let $feedbackModalClose = $('.feedback-modal__close');
+    let $feedbackModalClose = $('.feedback-modal .close-btn');
     let $feedbackModalOverlay = $('.feedback-modal__overlay');
+
     let onCloseModal = function (event) {
         event.preventDefault();
         $feedbackModal.fadeOut(300)

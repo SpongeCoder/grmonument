@@ -1,10 +1,12 @@
+include main-menu-second/main-menu-second
+include ../phone-link/phone-link
+include ../close-btn/close-btn
+
 mixin main-menu(data)
     +b.main-menu
         +wrapp.main-menu__wrapp
 
-            //- TODO: вынести в отд. блок
-            button.close-btn
-                +icon({icon: 'close', iconWidth:'30px', iconHeight:'30px'})
+            +close-btn({width: '30px', height: '30px'})
 
             +e.NAV.list
                 +e.A.link(href="/").is-active Главная
@@ -16,10 +18,6 @@ mixin main-menu(data)
                 +e.A.link(href=jv0) Оптовикам
                 +e.A.link(href=jv0) Контакты
 
-            +b.UL.main-menu-second
-                each item in headerTopMenu.items
-                    li
-                        a(href=jv0)= item.text
+            +main-menu-second
 
-            //- TODO: вынести в отд. блок
-            a(href="tel:89999999999").phone-link 8 (999) 999 99 99
+            +phone-link

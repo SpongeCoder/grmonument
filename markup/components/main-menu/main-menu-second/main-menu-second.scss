@@ -1,0 +1,7 @@
+.main-menu-second {
+    display: none;
+
+    @include below($screen-xl) {
+        display: block;
+    }
+}

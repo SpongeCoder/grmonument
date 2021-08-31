@@ -49,10 +49,8 @@
 
         border: none;
         background-color: transparent;
-        background-image: url("../img/minified-svg/burger.svg");
-        background-repeat: no-repeat;
-        background-size: rem(40) rem(21);
         outline: none;
+        padding: 0;
 
         @include below($screen-xl) {
             display: block;
