@@ -1,4 +1,4 @@
-let $ = require('jquery');
+import $ from 'jquery';
 
 $(function () {
     var $spoiler = $('.vertical-main-menu__head');
