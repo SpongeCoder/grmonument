@@ -1,29 +1,11 @@
-let $ = require('jquery');
+import $ from 'jQuery';
 
 $(function () {
-    const HEADER_HEIGHT = 143;
+    let $menu = $('.main-menu');
+    let $closeMenu = $('.main-menu .close-btn');
 
-    let $mainMenu = $('.main-menu'),
-        $categoriesListMenu = $('.all-categories-menu'),
-        $categoriesMenuBtn = $('.all-categories');
-
-    let onToggleCategoriesMenu = function (e) {
-        e.preventDefault();
-        $categoriesListMenu.slideToggle(300);
-    };
-
-    let onScroll = function () {
-        let scrollTop = $(window).scrollTop();
-
-        if (scrollTop >= HEADER_HEIGHT) {
-            $mainMenu.addClass('is-fixed');
-        } else {
-            $mainMenu.removeClass('is-fixed');
-        }
-    };
-
-    $categoriesMenuBtn.on('click', onToggleCategoriesMenu);
-    $(window).on('scroll', onScroll);
-
-    onScroll();
-});
+    $closeMenu.on('click', function (event) {
+        event.preventDefault();
+        $menu.removeClass('is-show');
+    })
+})

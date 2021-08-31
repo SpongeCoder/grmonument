@@ -1,6 +1,11 @@
 mixin main-menu(data)
     +b.main-menu
         +wrapp.main-menu__wrapp
+
+            //- TODO: вынести в отд. блок
+            button.close-btn
+                +icon({icon: 'close', iconWidth:'30px', iconHeight:'30px'})
+
             +e.NAV.list
                 +e.A.link(href="/").is-active Главная
                 +e.A.link(href=jv0) Акции
@@ -10,3 +15,11 @@ mixin main-menu(data)
                 +e.A.link(href=jv0) Гарантия
                 +e.A.link(href=jv0) Оптовикам
                 +e.A.link(href=jv0) Контакты
+
+            +b.UL.main-menu-second
+                each item in headerTopMenu.items
+                    li
+                        a(href=jv0)= item.text
+
+            //- TODO: вынести в отд. блок
+            a(href="tel:89999999999").phone-link 8 (999) 999 99 99

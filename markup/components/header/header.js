@@ -1,11 +1,11 @@
-let $ = require('jquery');
+import $ from 'jQuery';
 
 $(function () {
     let $burger = $('.header__burger');
-    let $menu = $('.mobile-menu');
+    let $menu = $('.main-menu');
 
     $burger.on('click', function (event) {
         event.preventDefault();
-        $menu.removeClass('is-close');
+        $menu.addClass('is-show');
     })
 })

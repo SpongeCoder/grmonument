@@ -9,7 +9,7 @@ window.$ = window.jQuery = require("jquery");
 
 import 'components/vertical-main-menu/vertical-main-menu.js';
 import 'components/header/header.js';
-import 'components/mobile-menu/mobile-menu.js';
+import 'components/main-menu/main-menu.js';
 import 'components/develop-monument/develop-monument.js';
 import 'components/special-offers/special-offers.js';
 import 'components/feedback-btn/feedback-btn.js';
