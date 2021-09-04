@@ -1,0 +1,35 @@
+extends ../layouts/default
+
+include ../components/memorial-block/memorial-block
+include ../components/breadcrumb/breadcrumb
+include ../components/page-nav/page-nav
+
+
+block vars
+    -pageSettings.title = 'Блоки';
+    -
+        breadcrumb = {
+            main: 'Главная',
+            items: ['Каталог продукции', 'Еще раздел'],
+        }
+
+block content
+    +wrapp
+        +title("Блоки")
+
+        h2 Карточка
+        +memorial-block(memorialBlocks.items[1])
+
+        hr
+
+    +wrapp
+        +title("Навигация")
+
+        h3 "Крошки"
+        +breadcrumb(breadcrumb)
+        hr
+
+        h3 Пагинация
+        +page-nav
+
+        hr

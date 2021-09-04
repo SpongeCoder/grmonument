@@ -28,15 +28,15 @@ body {
 	color: $color-text;
 	position: relative;
     background-color: $color-background;
-    background-image: url('../img/general/main_fon.jpg');
-    background-size: rem(1920) rem(880);
-    background-position: center rem(240);
-    background-repeat: no-repeat;
+    // background-image: url('../img/general/main_fon.jpg');
+    // background-size: rem(1920) rem(880);
+    // background-position: center rem(240);
+    // background-repeat: no-repeat;
 
-    @include below($screen-xl) {
-        background-position: 25% rem(60);
-        background-size: auto 60%;
-    }
+    // @include below($screen-xl) {
+    //     background-position: 25% rem(60);
+    //     background-size: auto 60%;
+    // }
 
 }
 
@@ -136,6 +136,11 @@ a {
         bottom:0;
         margin:auto 0;
         left:0;
+    }
+
+    &_instagram {
+        width: 36px;
+        height: 36px;
     }
 }
 

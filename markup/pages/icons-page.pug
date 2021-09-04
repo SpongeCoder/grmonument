@@ -1,0 +1,32 @@
+extends ../layouts/default
+
+
+block vars
+    -pageSettings.title = 'Иконки';
+    -
+        svgIconNames = [
+            'arrow',
+            'auto',
+            'burger',
+            'close',
+            'decor-block',
+            'decor-line',
+            'marker',
+            'small-block-decor',
+            'triangle',
+            'wrench',
+
+            'instagram',
+            'vk', 'ok', 'fb', 'tw'
+        ]
+
+block content
+    +wrapp
+        +title("Иконки")
+
+        each name in svgIconNames
+            div
+                +icon({icon: name})
+                div #{name}
+                hr
+                br
