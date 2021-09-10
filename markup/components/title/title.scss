@@ -14,14 +14,6 @@
         text-align: center;
     }
 
-    &--second {
-        .title__name {
-            font-family: 'Proxima Nova';
-            font-size: rem(24);
-            line-height: rem(23);
-        }
-    }
-
     &__icon {
         position: relative;
 
@@ -34,17 +26,15 @@
             display: none;
         }
 
-        &::before {
-            content: '';
-
+        .icon {
             position: absolute;
-            top: rem(-13);
+            top: -13px;
 
-            width: rem(33);
-            height: rem(29);
+            width: 33px;
+            height: 29px;
 
-            background-image: url('../img/minified-svg/small-block-decor.svg');
-            background-size: rem(33) rem(29);
+            color: #da8836;
+            fill: none;
         }
 
         &::after {
@@ -63,7 +53,7 @@
         &--left {
             margin-left: rem(32);
 
-            &::before {
+            .icon {
                 left: rem(-32);
             }
 
@@ -75,7 +65,7 @@
         &--right {
             margin-right: rem(32);
 
-            &::before {
+            .icon {
                 right: rem(-32);
 
                 transform: rotate(180deg);
@@ -95,7 +85,6 @@
         margin: 0 rem(45);
 
         font-family: 'PT Serif';
-        font-size: rem(28);
         line-height: rem(30);
         color: $color-grow;
         letter-spacing: -0.02em;

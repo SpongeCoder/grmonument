@@ -1,12 +1,22 @@
-mixin title(data)
+mixin title(title, tag='h1')
     .title&attributes(attributes)
         .title__icon.title__icon--left
-        h1.title__name= data
-        .title__icon.title__icon--right
+            +icon({icon: 'small-block-decor', iconWidth:'33', iconHeight:'29'})
 
+        case tag
+            when 'h2'
+                h2.title__name= title
+            when 'h3'
+                h3.title__name= title
+            when 'h4'
+                h4.title__name= title
+            when 'h5'
+                h5.title__name= title
+            when 'h6'
+                h6.title__name= title
 
-mixin titleSecond(data)
-    .title.title--second&attributes(attributes)
-        .title__icon.title__icon--left
-        h2.title__name= data
+            default
+                h1.title__name= title
+
         .title__icon.title__icon--right
+            +icon({icon: 'small-block-decor', iconWidth:'33', iconHeight:'29'})
