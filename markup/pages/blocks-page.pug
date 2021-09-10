@@ -4,6 +4,7 @@ include ../components/special-offers/special-offers
 include ../components/memorial-block/memorial-block
 include ../components/breadcrumb/breadcrumb
 include ../components/page-nav/page-nav
+include ../components/address/address
 
 
 block vars
@@ -16,20 +17,9 @@ block vars
 
 block content
     +wrapp
-        h1 Стильные заголовки:
-        +title("Заголовок h1")
-        +title("Заголовок h2", 'h2')
-        +title("Заголовок h3", 'h3')
-        +title("Заголовок h4", 'h4')
-        +title("Заголовок h5", 'h5')
-        +title("Заголовок h6", 'h6')
-
-        hr
-
-    +wrapp
         +title("Блоки", 'h2')
 
-        h2 Карточка
+        h2 Карточка:
         +memorial-block(memorialBlocks.items[1])
         +memorial-block(memorialBlocksDiscount.items[1])
 
@@ -43,11 +33,15 @@ block content
     +wrapp
         +title("Навигация", 'h2')
 
-        h3 "Крошки"
+        h3 "Крошки":
         +breadcrumb(breadcrumb)
         hr
 
-        h3 Пагинация
+        h3 Пагинация:
         +page-nav
 
+        hr
+
+        h3 Адрес:
+        +address
         hr

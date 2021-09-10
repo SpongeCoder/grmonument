@@ -58,10 +58,11 @@
             color: #fff;
 
             background-color: #d4872b;
-
-            // border-color: $color-root-red-1;
-            // background-color: $color-root-red-1;
         }
+    }
+
+    &__dots {
+        margin: 0 10px;
     }
 
     &__show-all {
