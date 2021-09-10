@@ -2,7 +2,7 @@ import $ from 'jquery';
 import Swiper from 'swiper';
 
 $(function () {
-    var mySwiper = new Swiper('.special-offers .swiper-container', {
+    new Swiper('.special-offers .swiper-container', {
         slidesPerView: 3,
         spaceBetween: 38,
         grabCursor:  true,
@@ -11,16 +11,21 @@ $(function () {
         autoplay: {
             delay: 5000,
         },
+        pagination: {
+            el: '.special-offers .swiper-pagination',
+            clickable: true,
+            type: 'bullets',
+        },
         breakpoints: {
-            // when window width is <= 320px
-            // 320: {
-            //     slidesPerView: 1,
-            //     spaceBetween: 20
-            // },
-
             1023: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                centeredSlides: false,
+            },
+            625: {
                 slidesPerView: 1,
-                spaceBetween: 20
+                spaceBetween: 20,
+                centeredSlides: true,
             }
         }
     })

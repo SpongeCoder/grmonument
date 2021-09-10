@@ -9,8 +9,7 @@ mixin special-offers(data)
                     each item in data.items
                         .swiper-slide
                             +memorial-block(item)
-                        .swiper-slide
-                            +memorial-block(item)
+            .swiper-pagination
 
         .special-offers__icon
             +icon({icon: 'decor-line', iconWidth:'410', iconHeight:'29'})

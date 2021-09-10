@@ -1,7 +1,6 @@
 .catalog-detail {
     margin-top: rem(-6);
     margin-bottom: rem(60);
-
     @include below($screen-xl) {
         margin: 0 auto rem(30) auto;
     }
@@ -10,7 +9,6 @@
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
-
         @include below($screen-xl) {
             display: block;
         }
@@ -27,7 +25,6 @@
 
         border: 1px solid #ebccad;
         background: #ffffff;
-
         @include below($screen-xl) {
             width: rem(278);
             height: rem(278);
@@ -38,7 +35,6 @@
             display: block;
             max-width: 88%;
             max-height: 88%;
-
             @include below($screen-xl) {
                 max-width: 79%;
                 max-height: 80%;
@@ -48,7 +44,6 @@
 
     &__info {
         width: rem(520);
-
         @include below($screen-xl) {
             width: 100%;
         }
@@ -65,7 +60,6 @@
         font-style: normal;
         line-height: rem(30);
         letter-spacing: -0.02em;
-
         @include below($screen-xl) {
             margin-bottom: rem(16);
             margin-left: 0;
@@ -81,7 +75,6 @@
 
         font-size: rem(16);
         line-height: rem(19);
-
         @include below($screen-xl) {
             margin-top: rem(20);
         }
@@ -94,7 +87,6 @@
 
     .feedback-btn {
         text-align: left;
-
         @include below($screen-xl) {
             text-align: center;
         }

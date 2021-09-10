@@ -1,4 +1,6 @@
 .special-offers {
+    position: relative;
+
     box-sizing: border-box;
     width: 100%;
     height: rem(631);
@@ -48,7 +50,7 @@
 
     &__items {
         width: 76.6%;
-        margin: 0 auto rem(55) auto;
+        margin: 0 auto 10px auto;
 
         @include below(1210px) {
             width: 80%;
@@ -56,7 +58,7 @@
 
         @include below($screen-xl) {
             width: 100%;
-            margin-bottom: rem(15);
+            // margin-bottom: rem(15);
         }
 
         .memorial-block {
@@ -69,10 +71,25 @@
         text-align: center;
 
         .icon {
+            color: #ffffff;
             fill: none;
 
             @include below($screen-xl) {
                 width: 100%;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        position: relative;
+
+        margin: 10px auto;
+
+        .swiper-pagination-bullet {
+            margin: 0 10px;
+
+            &-active {
+                background: #ffffff;
             }
         }
     }

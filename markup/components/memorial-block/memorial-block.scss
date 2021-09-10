@@ -6,6 +6,8 @@
 
     text-decoration: none;
 
+    border: 1px solid #ebccad;
+
     @include below($screen-xl) {
         width: rem(233);
     }
@@ -45,9 +47,6 @@
         justify-content: center;
         height: rem(239);
 
-        border-top: 1px solid #ebccad;
-        border-right: 1px solid #ebccad;
-        border-left: 1px solid #ebccad;
         background-color: #fff;
 
         @include below($screen-xl) {
@@ -88,12 +87,16 @@
     }
 
     &__name {
+        width: 100%;
         margin-bottom: rem(7);
+        overflow: hidden;
 
         font-size: rem(18);
         font-weight: bold;
         color: $color-grow;
+        white-space: nowrap;
         letter-spacing: -0.02em;
+        text-overflow: ellipsis;
 
         @include below($screen-xl) {
             margin-bottom: rem(10);
