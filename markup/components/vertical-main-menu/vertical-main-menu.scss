@@ -50,6 +50,7 @@
         transform: rotate(60deg);
 
         transition: transform 0.3s;
+        color: #ffffff;
     }
 
     &__list {
@@ -80,19 +81,17 @@
 
             color: $color-text;
 
-            &::before {
-                content: '';
-
+            .icon {
                 position: absolute;
-                top: 0;
+                top: rem(-5);
                 left: rem(20);
 
                 width: rem(33);
                 height: rem(29);
 
-                background-image: url('../img/minified-svg/small-block-decor.svg');
-                background-size: rem(33) rem(29);
                 opacity: 0;
+
+                fill: transparent;
 
                 transition: opacity 0.3s;
             }
@@ -102,7 +101,7 @@
                 color: $color-orange;
                 text-decoration: none;
 
-                &::before {
+                .icon {
                     opacity: 1;
                 }
             }

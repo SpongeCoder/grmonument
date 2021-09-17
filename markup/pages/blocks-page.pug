@@ -5,6 +5,7 @@ include ../components/memorial-block/memorial-block
 include ../components/breadcrumb/breadcrumb
 include ../components/page-nav/page-nav
 include ../components/address/address
+include ../components/vertical-main-menu/vertical-main-menu
 
 
 block vars
@@ -29,6 +30,8 @@ block content
         +special-offers(memorialBlocksDiscount)
 
         hr
+
+        +vertical-main-menu(verticalMainMenu)
 
     +wrapp
         +title("Навигация", 'h2')

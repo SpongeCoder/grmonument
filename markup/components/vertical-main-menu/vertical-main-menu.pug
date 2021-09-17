@@ -18,9 +18,13 @@ mixin vertical-main-menu(data)
                     UL.vertical-main-menu__list(style="display: block")
                         each itemList in item.items
                             LI
-                                a(href=jv0)= itemList
+                                a(href=jv0)
+                                    +icon({icon: 'small-block-decor', iconWidth:'2.0625rem', iconHeight:'1.8125rem'})
+                                    = itemList
                 else
                     UL.vertical-main-menu__list
                         each itemList in item.items
                             LI
-                                a(href=jv0)= itemList
+                                a(href=jv0)
+                                    +icon({icon: 'small-block-decor', iconWidth:'2.0625rem', iconHeight:'1.8125rem'})
+                                    = itemList

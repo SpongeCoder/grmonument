@@ -7,9 +7,11 @@
     width: rem(100);
     height: rem(82);
 
-    background-image: url("../img/minified-svg/decor-block.svg");
-    background-repeat: no-repeat;
-    background-size: rem(100) rem(82);
+    .icon:first-child {
+        position: absolute;
+        fill: transparent;
+        color: $color-orange;
+    }
 
     span {
         font-size: rem(30);
