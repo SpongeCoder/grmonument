@@ -39,11 +39,11 @@
     font-size: rem(14);
     font-weight: bold;
     line-height: rem(14);
-    color: #4d2d0a;
+    color: $color-grow;
     letter-spacing: -0.02em;
 
     border: none;
-    border-bottom: rem(2) dotted #4d2d0a;
+    border-bottom: rem(2) dotted $color-grow;
     background: none;
     outline: none;
 
