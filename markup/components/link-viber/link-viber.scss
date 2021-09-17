@@ -1,17 +1,19 @@
 .link-viber {
-    background-color: #7b519d;
     display: inline-flex;
     align-items: center;
     padding: 5px 10px 5px 5px;
-    border-radius: 5px;
+
     color: #fff;
 
+    border-radius: 5px;
+    background-color: #7b519d;
+
     .icon {
-        fill: #fff;
+        display: block;
         width: 30px;
         height: 30px;
-        display: block;
         margin-right: 5px;
+        fill: #fff;
     }
 
     &:hover {

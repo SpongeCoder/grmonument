@@ -23,14 +23,10 @@
         display: flex;
         align-items: center;
 
-        .link-whatsapp {
-            margin-right: 10px;
-        }
-
         @include below($screen-xl) {
             a {
-                overflow: hidden;
                 padding: 5px;
+                overflow: hidden;
 
                 .icon {
                     margin: 0;
@@ -44,6 +40,10 @@
 
         @include below(465px) {
             display: none;
+        }
+
+        .link-whatsapp {
+            margin-right: 10px;
         }
     }
 

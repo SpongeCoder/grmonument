@@ -47,10 +47,11 @@
     &__icon {
         margin: rem(-5) rem(19) 0 0;
 
+        color: #ffffff;
+
         transform: rotate(60deg);
 
         transition: transform 0.3s;
-        color: #ffffff;
     }
 
     &__list {
@@ -91,9 +92,8 @@
 
                 opacity: 0;
 
-                fill: transparent;
-
                 transition: opacity 0.3s;
+                fill: transparent;
             }
 
             &.is-active,
