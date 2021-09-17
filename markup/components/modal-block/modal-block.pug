@@ -1,0 +1,8 @@
+include ../close-btn/close-btn
+
+mixin modal-block(jsClass)
+    .modal-block(class=jsClass)
+        .modal-block__overlay
+        .modal-block__content
+            +close-btn({width: '20px', height: '20px'})
+            block

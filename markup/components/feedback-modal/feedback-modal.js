@@ -1,10 +1,10 @@
 import $ from 'jquery';
 
 $(function () {
-    let $feedbackBtn = $('.feedback-btn button');
-    let $feedbackModal = $('.feedback-modal');
-    let $feedbackModalClose = $('.feedback-modal .close-btn');
-    let $feedbackModalOverlay = $('.feedback-modal__overlay');
+    let $feedbackBtn = $('.js-feedback-modal-btn');
+    let $feedbackModal = $('.js-feedback-modal');
+    let $feedbackModalClose = $('.js-feedback-modal .close-btn');
+    let $feedbackModalOverlay = $('.js-feedback-modal .modal-block__overlay');
 
     let onCloseModal = function (event) {
         event.preventDefault();

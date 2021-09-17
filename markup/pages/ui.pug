@@ -1,5 +1,10 @@
 extends ../layouts/default
 
+include ../components/decor-index-block/decor-index-block
+include ../components/feedback-btn/feedback-btn
+include ../components/feedback-modal/feedback-modal
+include ../components/feedback-form/feedback-form
+
 
 block vars
     -pageSettings.title = 'User Interface';
@@ -37,12 +42,29 @@ block content
         hr
 
     +wrapp
-        h1 Стильные заголовки:
-        +title("Заголовок h1")
-        +title("Заголовок h2", 'h2')
-        +title("Заголовок h3", 'h3')
-        +title("Заголовок h4", 'h4')
-        +title("Заголовок h5", 'h5')
-        +title("Заголовок h6", 'h6')
+        h2 Стильные заголовки:
+        +title('Заголовок h1')
+        +title('Заголовок h2', 'h2')
+        +title('Заголовок h3', 'h3')
+        +title('Заголовок h4', 'h4')
+        +title('Заголовок h5', 'h5')
+        +title('Заголовок h6', 'h6')
 
         hr
+
+    +wrapp
+
+        +decor-index-block('text')
+        +decor-index-block('1')
+
+        hr
+
+        +decor-index-block-icon('auto')
+        +decor-index-block-icon('wrench')
+
+    +wrapp
+        +feedback-form
+
+        h2 Модальное окно:
+        +feedback-btn
+        +feedback-modal

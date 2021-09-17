@@ -1,0 +1,15 @@
+mixin feedback-form()
+    .feedback-form
+        .feedback-form__title Заказать или задать вопрос
+
+        form(action="post").feedback-form__form
+            input(type="text" name="name"  required placeholder="Имя")
+            input(type="tel" name="phone"  required placeholder="Телефон")
+            textarea(name="text" required placeholder="Комментарий")
+
+            input(type="checkbox" name="consent" id="consent-check" required value="1")
+            label(for="consent-check").feedback-form__form-consent
+                | Согласие на обработку персональных данных
+
+            .feedback-form__form-footer
+                button(type="send") Отправить

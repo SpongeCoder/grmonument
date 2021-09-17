@@ -1,22 +1,6 @@
-include ../close-btn/close-btn
+include ../modal-block/modal-block
+include ../feedback-form/feedback-form
 
-mixin feedback-modal(data)
-    .feedback-modal
-        .feedback-modal__overlay
-
-        .feedback-modal__content
-            +close-btn({width: '20px', height: '20px'})
-
-            .feedback-modal__title Заказать или задать вопрос
-
-            form(action="post").feedback-modal__form
-                input(type="text" name="name"  required placeholder="Имя")
-                input(type="tel" name="phone"  required placeholder="Телефон")
-                textarea(name="text" required placeholder="Комментарий")
-
-                input(type="checkbox" name="consent" id="consent-check" required value="1")
-                label(for="consent-check").feedback-modal__form-consent
-                    | Согласие на обработку персональных данных
-
-                .feedback-modal__form-footer
-                    button(type="send") Отправить
+mixin feedback-modal()
+    +modal-block('js-feedback-modal')
+        +feedback-form
