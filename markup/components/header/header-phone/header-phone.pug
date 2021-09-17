@@ -1,8 +1,9 @@
+include ../../link-viber/link-viber
+include ../../link-whatsapp/link-whatsapp
+
 mixin header-phone()
     .header-phone&attributes(attributes)
         .header-phone__text Самая выгодная цена по вашему<br> эскизу или фотографии памятника
         .header-phone__buttons
-            a(href="tel:99999999999").header-phone__btn.header-phone__btn--whatsapp
-                span +7 (999) 999 99 99
-            a(href="tel:99999999999").header-phone__btn.header-phone__btn--viber
-                span +7 (999) 999 99 99
+            +link-whatsapp
+            +link-viber

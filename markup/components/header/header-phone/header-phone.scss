@@ -22,9 +22,32 @@
     &__buttons {
         display: flex;
         align-items: center;
+
+        .link-whatsapp {
+            margin-right: 10px;
+        }
+
+        @include below($screen-xl) {
+            a {
+                overflow: hidden;
+                padding: 5px;
+
+                .icon {
+                    margin: 0;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
+
+        @include below(465px) {
+            display: none;
+        }
     }
 
-    &__btn {
+    /* &__btn {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -78,5 +101,5 @@
             color: #ffffff;
             text-decoration: underline;
         }
-    }
+    } */
 }

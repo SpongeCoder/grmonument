@@ -38,8 +38,8 @@
             font-size: rem(26);
             line-height: rem(27);
         }
-        @include below(424px) {
-            display: none;
-        }
+        // @include below(424px) {
+        //     display: none;
+        // }
     }
 }

@@ -1,0 +1,22 @@
+.link-whatsapp {
+    background: rgb(32,176,56);
+    background: linear-gradient(0deg, rgba(32,176,56,1) 0%, rgba(96,214,106,1) 100%);
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px 5px 5px;
+    border-radius: 5px;
+    color: #fff;
+
+    .icon {
+        fill: #fff;
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin-right: 5px;
+    }
+
+    &:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+}

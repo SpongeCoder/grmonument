@@ -4,6 +4,8 @@ include ../components/decor-index-block/decor-index-block
 include ../components/feedback-btn/feedback-btn
 include ../components/feedback-modal/feedback-modal
 include ../components/feedback-form/feedback-form
+include ../components/link-viber/link-viber
+include ../components/link-whatsapp/link-whatsapp
 
 
 block vars
@@ -53,7 +55,6 @@ block content
         hr
 
     +wrapp
-
         +decor-index-block('text')
         +decor-index-block('1')
 
@@ -61,6 +62,19 @@ block content
 
         +decor-index-block-icon('auto')
         +decor-index-block-icon('wrench')
+
+        hr
+
+    +wrapp
+        h2 Социальные ссылки
+
+        div
+            +link-viber
+        br
+        div
+            +link-whatsapp
+
+        hr
 
     +wrapp
         +feedback-form
