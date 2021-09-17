@@ -27,7 +27,7 @@
                 padding: rem(10);
                 margin-bottom: rem(20);
 
-                color: #383838;
+                color: $color-text;
 
                 border: none;
                 border-bottom: rem(2) solid $color-gray;
@@ -43,7 +43,7 @@
             margin-bottom: rem(30);
             resize: none;
 
-            color: #383838;
+            color: $color-text;
 
             border: rem(2) solid $color-gray;
         }

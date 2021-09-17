@@ -123,12 +123,12 @@
         }
 
         &-old {
-            color: #383838;
+            color: $color-text;
 
             span {
                 &:first-child {
                     text-decoration: line-through;
-                    text-decoration-color: #383838;
+                    text-decoration-color: $color-text;
                 }
             }
         }
