@@ -1,30 +1,3 @@
 .feedback-btn {
     text-align: center;
-
-    button {
-        padding: rem(12) rem(30);
-
-        font-size: rem(18);
-        line-height: rem(22);
-        color: #ffffff;
-        text-transform: uppercase;
-
-        border: none;
-        border-radius: rem(5);
-        background: #da8836;
-
-        transition: background 0.3s;
-
-        @include below($screen-xl) {
-            padding: rem(12) rem(25);
-
-            font-size: rem(16);
-        }
-
-        &:hover {
-            color: #ffffff;
-
-            background-color: #b47323;
-        }
-    }
 }

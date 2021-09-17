@@ -20,7 +20,7 @@
         width: 100%;
         height: 2px;
 
-        background-color: #da8836;
+        background-color: $color-orange;
 
         @include below($screen-xl) {
             display: none;
@@ -33,7 +33,7 @@
             width: 33px;
             height: 29px;
 
-            color: #da8836;
+            color: $color-orange;
             fill: none;
         }
 
@@ -46,7 +46,7 @@
             width: rem(7);
             height: rem(7);
 
-            background: #da8836;
+            background: $color-orange;
             transform: rotate(-45deg);
         }
 

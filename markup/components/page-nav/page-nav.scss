@@ -14,15 +14,15 @@
         fill: #4d2d0a;
 
         &.is-disable {
-            fill: #c4c4c4;
+            fill: $color-gray;
 
             &:hover {
-                fill: #c4c4c4;
+                fill: $color-gray;
             }
         }
 
         &:hover {
-            fill: #b47323;
+            fill: darken($color-orange, 10%);
         }
     }
 

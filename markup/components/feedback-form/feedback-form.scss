@@ -30,7 +30,7 @@
                 color: #383838;
 
                 border: none;
-                border-bottom: rem(2) solid #c4c4c4;
+                border-bottom: rem(2) solid $color-gray;
             }
         }
 
@@ -45,7 +45,7 @@
 
             color: #383838;
 
-            border: rem(2) solid #c4c4c4;
+            border: rem(2) solid $color-gray;
         }
     }
 
@@ -62,7 +62,6 @@
         padding-left: rem(45);
 
         font-size: rem(14);
-        color: #878787;
 
         cursor: pointer;
 
@@ -77,7 +76,7 @@
             width: rem(30);
             height: rem(30);
 
-            border: rem(2) solid #c4c4c4;
+            border: rem(2) solid $color-gray;
         }
 
         &::after {
@@ -90,7 +89,7 @@
             width: rem(16);
             height: rem(16);
 
-            background: #da8836;
+            background: $color-orange;
             opacity: 0;
 
             transition: opacity 0.3s;
@@ -115,31 +114,5 @@
 
     &__form-footer {
         text-align: center;
-
-        button {
-            width: rem(186);
-            height: rem(45);
-
-            font-size: rem(18);
-            line-height: rem(22);
-            color: #ffffff;
-            text-align: center;
-            text-transform: uppercase;
-
-            border: none;
-            border-radius: rem(5);
-            background: #da8836;
-
-            transition: background 0.3s;
-            @include below($screen-xl) {
-                font-size: rem(16);
-            }
-
-            &:hover {
-                color: #ffffff;
-
-                background-color: #b47323;
-            }
-        }
     }
 }

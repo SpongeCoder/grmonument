@@ -22,7 +22,7 @@
         transition: background 0.3s;
 
         &.is-active {
-            background-color: #b47323;
+            background-color: darken($color-orange, 10%);
 
             .vertical-main-menu__icon {
                 transform: rotate(0deg);
@@ -30,7 +30,7 @@
         }
 
         &:hover {
-            background-color: #b47323;
+            background-color: darken($color-orange, 10%);
         }
     }
 
@@ -99,7 +99,7 @@
 
             &.is-active,
             &:hover {
-                color: #da8836;
+                color: $color-orange;
                 text-decoration: none;
 
                 &::before {

@@ -43,7 +43,7 @@
         font-size: rem(16);
         color: #383838;
 
-        border-bottom: 2px solid #c4c4c4;
+        border-bottom: 2px solid $color-gray;
 
         @include below($screen-xl) {
             padding: rem(15) rem(15);

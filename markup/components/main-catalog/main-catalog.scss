@@ -102,7 +102,7 @@
         text-transform: uppercase;
 
         border-radius: rem(5);
-        background-color: #da8836;
+        background-color: $color-orange;
 
         @include below($screen-xl) {
             width: rem(230);
@@ -113,7 +113,7 @@
         &:hover {
             color: #ffffff;
 
-            background-color: #b47323;
+            background-color: darken($color-orange, 10%);
         }
     }
 }

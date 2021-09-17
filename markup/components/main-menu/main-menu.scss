@@ -74,11 +74,11 @@
             }
 
             &:hover {
-                color: #b47323;
+                color: darken($color-orange, 10%);
             }
 
             &.is-active {
-                color: #b47323;
+                color: darken($color-orange, 10%);
             }
         }
     }

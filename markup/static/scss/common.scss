@@ -103,7 +103,7 @@ a {
     transition: $transition-link;
 
     &:hover {
-        color: #B47323;
+        color: darken($color-orange, 10%);
     }
 }
 
@@ -143,6 +143,33 @@ a {
     &_instagram {
         width: 36px;
         height: 36px;
+    }
+}
+
+.btn {
+    padding: rem(12) rem(30);
+
+    font-size: rem(18);
+    line-height: rem(22);
+    color: #ffffff;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: rem(5);
+    background: $color-orange;
+
+    transition: background 0.3s;
+
+    @include below($screen-xl) {
+        padding: rem(12) rem(25);
+
+        font-size: rem(16);
+    }
+
+    &:hover {
+        color: #ffffff;
+
+        background-color: darken($color-orange, 10%);
     }
 }
 

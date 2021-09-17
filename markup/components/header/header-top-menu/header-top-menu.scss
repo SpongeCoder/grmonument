@@ -23,7 +23,7 @@
 
             &:hover,
             &.is-active {
-                color: #b47323;
+                color: darken($color-orange, 10%);
             }
         }
     }
