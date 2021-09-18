@@ -6,6 +6,7 @@ include ../components/breadcrumb/breadcrumb
 include ../components/page-nav/page-nav
 include ../components/address/address
 include ../components/vertical-main-menu/vertical-main-menu
+include ../components/table-size-price/table-size-price
 
 
 block vars
@@ -32,6 +33,12 @@ block content
         hr
 
         +vertical-main-menu(verticalMainMenu)
+
+        hr
+
+        +table-size-price
+
+        hr
 
     +wrapp
         +title("Навигация", 'h2')

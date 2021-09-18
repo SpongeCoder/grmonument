@@ -11,6 +11,15 @@
 
     background-color: $footer-background;
 
+    @include below($screen-xl) {
+        height: rem(120);
+
+        .social-links {
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+    }
+
     &::before {
         content: '';
 
@@ -26,7 +35,7 @@
 
     &__wrapp {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
 
         @include below($screen-xl) {

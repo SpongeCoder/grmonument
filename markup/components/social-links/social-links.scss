@@ -1,0 +1,20 @@
+.social-links {
+    display: flex;
+
+    &__item {
+        display: block;
+        margin-right: 8px;
+
+        text-decoration: none;
+
+        transition: 0.3s transform;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
