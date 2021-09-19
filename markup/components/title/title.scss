@@ -82,11 +82,13 @@
 
         display: inline-block;
         flex: 1 0 auto;
+        max-width: 60%;
         margin: 0 rem(45);
 
         font-family: 'PT Serif';
         line-height: rem(30);
         color: $color-grow;
+        text-align: center;
         letter-spacing: -0.02em;
 
         @include below($screen-xl) {
